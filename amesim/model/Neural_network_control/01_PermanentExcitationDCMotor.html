@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <script type="text/javascript" src="qthelp://lmsimagine.lab/ame_dir/doc/javascript/init_submodel.js"></script>
+    <title>
+      Permanent Magnet DC motor characteristics
+    </title>
+  
+  </head>
+  <body style="background-color: white;" link="blue" vlink="purple">
+    <h1 align="center">
+      <font color="#3757A7" size="6">Permanent Magnet DC motor characteristics</font>
+    </h1>
+    <h2>
+      <u>Purpose</u>
+    </h2>
+    <p>
+      This demonstration aims at giving an example that helps the designer in 
+      selecting the appropriate DC motor for a specific application.
+    </p>
+    <p>
+      A standard set of curves, used to select the right motor, are plotted. The setting
+      of sketch parameters is also explained.
+    </p>
+    <h2>
+      <u>Open the demo</u>
+    </h2>
+    <p>
+      <a href=
+      "01_PermanentExcitationDCMotor.ame">$AME/demo/Libraries/EMD/01_PermanentExcitationDCMotor.ame</a>
+    </p>
+    <h2>
+      <u>Description</u>
+    </h2>
+    <h3>
+      <u>Model description</u>
+    </h3>
+    <p>
+      In order to plot a DC motor's characteristic curves, one has to represent
+      the DC motor's mechanical and electrical behavior:
+      It is assumed the DC motor is not a perfect one, so an inertia model
+      with both viscous and stiction friction is added to the direct current machine model.
+    </p>
+    <p align="center">
+      <img title="Basic model for DC motor use" src=
+      "./01_PermanentExcitationDCMotor_fichiers/image001.png">
+    </p>
+    <p align="center">
+      <b>Figure 1: Sketch of the permanent excitation DC Motor</b>
+    </p>
+    <h3>
+      <u>Performance Curve</u>
+    </h3>
+    <p>           
+      A machine's  performance curve is typically a group of curves on the
+      same diagram and they are typically represented with respect to
+      mechanical torque:
+    </p>
+    <ul>
+      <li>The efficiency of the motor
+      </li>
+      <li>The mechanical speed
+      </li>
+      <li>The current consumed
+      </li>
+      <li>The mechanical power produced by the motor.
+      </li>
+    </ul>
+    <p align="center">
+      <img title="Basic model for DC motor use" src=
+      "./01_PermanentExcitationDCMotor_fichiers/motorCurves.png">
+    </p>
+    <p align="center">
+      <b>Figure 2: Performance Curve for DC Motor</b>
+    </p>
+    <p>
+      Note that these curves depend on the supply voltage level (retrieved
+      from the DC motor supplier data sheets) and are given for a single temperature.
+      Moreover, one should consider the temperature effect on the machine's
+      characteristics.
+    </p>
+    <p>
+      The next step of the process is to retrieve the value for the electrical 
+      and mechanical parameters of the motor:
+    </p>
+    <p align="center">
+      <img title="Basic model for DC motor use" src=
+      "./01_PermanentExcitationDCMotor_fichiers/motorParameters.png">
+    </p>
+    <p align="center">
+      <b>Figure 3: Technical Parameters</b>
+    </p>
+    <p>
+      We make sure the motor operates in the temperature and with the
+      supply voltage for which these values are valid. <br>
+      The stiction torque is obtained from the no load current or from its
+      explicit value given in the data sheet.<br>
+      After setting the static parameters for the inertia and machine:
+      It is important not to forget to set the initial value of the current to
+      its stall value, so that no electrical transient phenomena occur at the
+      start of the simulation. This value can be calculated from the stall
+      torque (see below).      
+    </p>
+
+    <h2>
+      <u>Simulation</u>
+    </h2>
+    <h3><a name="Input_to_system_chapter">
+      <u>Input to system</u>
+    </a></h3>
+    <p>            
+      The torque input is a ramp decreasing from its stall value to 0.
+      The stall torque is set using the maximum value between the stall torque
+      value from data sheet and the following formula: \(k \cdot \frac{U}{R}\), with k, the
+      torque constant, U the supplied voltage and R the electrical resistance
+      for the armature winding.
+    </p>
+    <p>
+      Once all parameters are correctly set, run the simulation for the torque
+      evolution duration.
+    </p>
+    <h3>
+      <u>Results</u>
+    </h3>
+    <p>
+      The classical characteristic for DC motor can be plotted:
+    </p>
+    <p align="center">
+      <img title="Characteristics for DC motor" src=
+      "01_PermanentExcitationDCMotor_fichiers/DC_motor_characteristic_page1.png">
+    </p>
+    <p align="center">
+      <b>Figure 4: Current [A], Efficiency, Mechanical output power [W] and
+      Mechanical Speed [rev/min] as a function of torque [Nm]</b>
+    </p>
+    <p>
+      To select a DC motor from its characteristics, the usage of the machine
+      must be known (intermittent or intensive usage). Indeed, optimizing the
+      dynamic performances or the global efficiency influences the machine
+      choice. The maximum torque can also be an important criterion. For
+      intensive continuous usage it is recommended to select the motor so that
+      the nominal point is between the maximum efficiency point and the maximum
+      power point.
+    </p>
+    <p>
+     
+    </p>
+    <hr style="border-width:0;">
+<div id="AMECopyright"></div>
+</body>
+</html>

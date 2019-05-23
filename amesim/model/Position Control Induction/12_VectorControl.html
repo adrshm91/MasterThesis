@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <script type="text/javascript" src="qthelp://lmsimagine.lab/ame_dir/doc/javascript/init_submodel.js"></script>
+    <title>Permanent magnet synchronous motor current vector control</title>
+  
+  </head>
+  <body style="background-color: white;" link="blue" vlink="purple">
+    <h1 align="center">
+      <font color="#3757A7" size="6">Permanent magnet synchronous motor current vector control</font>
+    </h1>
+      <h2>
+        <u>Purpose</u>
+      </h2>
+    <p>
+      This demonstration example introduces one of the current vector control elements of the EMD library:
+      <a href="../../../libemd/doc/html/submodels/EMDPMSMTC01.html">EMDPMSMTC01</a>. 
+      It is used as part of a control system of a permanent-magnet synchronous motor (PMSM). 
+      The system takes a torque command as input while imposing voltage and current limits.       
+    </p>
+      <h2>
+        <u>Open the demo</u>
+      </h2>
+    <p>
+      <a href=
+      "12_VectorControl.ame">$AME/demo/Libraries/EMD/12_VectorControl.ame</a>
+    </p>
+      <h2>
+        <u>Description</u>
+      </h2>
+    <p>
+      This model represents a 
+      control system of a PMSM with three main parts:
+      the control, the inverter and the motor.
+      <br>
+      The control elements and the motor come from the EMD library. 
+      The three-phase inverter comes from the ESC library, it is used to transform the
+      DC voltage into AC voltage.
+      <br>
+      The current vector control element (<a href="../../../libemd/doc/html/submodels/EMDPMSMTC01.html">EMDPMSMTC01</a>) 
+      defines the dq currents needed to produce a torque 
+      equals to the torque command.
+      Some quantities have an impact on the dq currents chosen by the control:
+      the maximum phase current RMS magnitude (Imax),
+      the maximum phase voltage RMS magnitude (Umax),
+      and the rotor relative speed.
+      <br>
+      The rotor relative speed slope is plotted:      
+    </p>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/12_Vector_Control_Machine_speed_input.png" alt="Figure 1: System Input">
+    </p>
+    <p align="center">
+      <b>Figure 1: System Input</b>
+    </p>
+    <p>
+      The block diagram of the model is represented:
+    </p>
+    <p align="center">
+    <img src="12_VectorControl_fichiers/sketch_principle.png">
+    </p>
+    <p align="center">
+      <b>Figure 2: Block diagram model</b>
+    </p>
+    
+    <p>
+    The equivalent Simcenter Amesim sketch is shown below:
+    </p>
+    
+    <p align="center">
+    <img src="12_VectorControl_fichiers/sketch_Amesim.png">
+    </p>
+    <p align="center">
+      <b>Figure 3: Simcenter Amesim sketch</b>
+    </p>
+    
+    <p>
+      The electric machine is a brushless permanent magnet motor commanded
+      with field oriented vector control. The 
+      <a href="../../../libemd/doc/html/submodels/EMDPMSMTC01.html">EMDPMSMTC01</a> 
+      control submodel sets the d and q axes current objectives in response to the torque 
+      command reference.
+      The <a href="../../../libemd/doc/html/submodels/EMDPMSMCC01.html">EMDPMSMCC01</a>
+      submodel uses two PI controllers to regulate the machine currents to these values.
+      <br>
+      Direct and reverse abc to dq0 transformations are realized with the 
+      <a href="../../../libemd/doc/html/submodels/EMDDPT01.html">EMDDPT01</a>
+      and <a href="../../../libemd/doc/html/submodels/EMDDQ02P01.html">EMDDQ02P01</a>
+      submodels.
+      This is necessary since the
+      machine is fed in the standard abc frame.
+      <br>
+      Phase-line transformations are applied using the submodels
+      <a href="../../../libemd/doc/html/submodels/EMDSDUP01.html">EMDSDUP01</a>,
+      <a href="../../../libemd/doc/html/submodels/EMDSDI01.html">EMDSDI01</a>,
+      <a href="../../../libemd/doc/html/submodels/EMDSDUSP01.html">EMDSDUSP01</a>.
+      <br>
+      Finally, commanded voltage values are given to the three-phase inverter
+      for proper electric motor control.
+      <br>
+      The sketch contains a third connector for the homopolar element of dq0 transformation.
+      Although the input value is not used by the control submodel, and the output is constantly set to zero. 
+    </p>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/homocomp.png" alt="Homopolar Component Ports"><br>
+      <b>Figure 4: Homopolar Component Ports</b>
+    </p>
+    <h3>
+      Characteristic Curve
+    </h3>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/graphTqSd.png" alt="Torque vs. rotor speed"><br>
+      <b>Figure 5: Torque vs. rotor speed</b>
+    </p>
+    <p align="justify">
+        <img src="12_VectorControl_fichiers/red.png" alt="Constraints Color">
+        Imax Constraint.<br>
+        <img src="12_VectorControl_fichiers/green.png" alt="Limits Color"> Limits.<br>
+        <img src="12_VectorControl_fichiers/blue.png" alt="Machine Curve Color">
+        Machine Curve.
+    </p>
+    <p>
+      Machines are usually characterized by a maximum torque vs. speed curve like the
+      one shown on <b>Figure 5</b>. The figure also shows the control strategy imposed
+      limits, with respect to maximum stator voltage (Umax) and current (Imax) mentioned above. 
+      The point where power output decreases is also shown (P&lt;Pmax). The curve shown
+      represents the <b>maximum limits </b>for a given machine, but an infinite number of
+      lesser torque values are contained inside of it. To see some of these values, as well
+      as the maximum limit, we will do a Batch Run. 
+    </p>
+     <p align="center">
+      <img src="12_VectorControl_fichiers/12_Vector_Control_Torque_vs_speed.png" alt="Torque vs. rotor speed (delta)"><br>
+      <b>Figure 6: Torque vs. rotor speed (delta)</b>
+    </p>
+    <p>
+      After plotting the results we see that different torque commands will give the
+      desired output for a different range of speeds but will always reach a speed
+      were the torque command cannot be respected. For the conditions leading to these limitations,
+      you can consult the <a href="../../../libemd/doc/html/submodels/EMDPMSMTC01.html">
+      EMDPMSMTC01</a> submodel documentation.
+    </p>
+
+    <h3>
+      Power Output
+    </h3>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/powerout.png" alt="Power vs. rotor speed"><br>
+      <b>Figure 7: Power output<br>(Power vs. rotor speed characteristic)</b>
+    </p>
+    <p>
+      This is another characteristic curve  for a PMSM: power output versus rotor speed.
+      It can be observed that, as before, the command strategy imposed limits have an effect
+      on machine behavior. We can observe the Umax limit influence, shown as a border in the previous image,
+      in the power output curve shown in the next image:
+    </p>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/12_Vector_Control_Electric_power.png" 
+      alt="Power vs. rotor speed, from simulation"><br>
+      <b>Figure 8: Power output<br>(from simulation)</b>
+    </p>
+    <p>
+      The curve can be explained by the control states applied on each section:
+      <ul>
+      <li>
+      <b>State 1</b> corresponds to the fist slope, where current and voltage
+      can grow freely.
+      </li>
+      <li>
+      <b>State 2</b> represents the first limit, when Umax is reached 
+      and the slope changes inclination as a result.
+      </li>
+      <li><b>State 3</b> represents the maximum
+      power limit, that remains constant until
+      </li>
+      <li><b>State 5</b> is reached, where
+      current is lowered to keep torque at maximum, resulting in a decreasing power output;
+      although the exact state transition points depend on the machine, as defined by its parameters. 
+      </li>
+      </ul>
+      These transitions can be appreciated in the next image:
+    </p>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/powersing.png" 
+      alt='Power vs. rotor speed, from batch "4"'><br>
+      <b>Figure 9: Power output and control state<br>(from batch "4")</b>
+    </p>
+    
+   <h3>
+      Star/Delta transformation
+    </h3>
+    
+    <p>
+      To control a motor with a star winding connection type, you must 
+      change the <b>connecType</b> global parameter from delta to star.
+      This will update the parameters in all three "line to phase transformations" components 
+      as well as in the synchronous machine. 
+      Also, to be completely equivalent to the previous system, DC voltage supply will be multiplied by
+      \(\sqrt{3}\).
+    </p>  
+    
+    <p align="center">
+      <img src="12_VectorControl_fichiers/star_global_param.png"><br><br>
+      <b>Figure 10: Global parameter modifications</b>
+    </p>
+    
+    <p>
+      The advantage of using the <a href="../../../libemd/doc/html/submodels/EMDSDUP01.html">EMDSDUP01</a>,
+      <a href="../../../libemd/doc/html/submodels/EMDSDI01.html">EMDSDI01</a> and
+      <a href="../../../libemd/doc/html/submodels/EMDSDUSP01.html">EMDSDUSP01</a>
+      submodels is that no changes in the control strategy are required for a different type
+      of winding connection of the PMSM machine.
+    </p>
+    <p align="center">
+      <img src="12_VectorControl_fichiers/tstar.png" alt="Torque vs. rotor speed (star)"><br>
+      <b>Figure 11: Torque vs. rotor speed (star)</b>
+    </p>  
+    <p>
+      Finally, it is interesting to note that the <a href="../../../libesc/doc/html/submodels/ESCAVINV001.html">ESCAVINV001</a>
+      average three-phase inverter submodel calculates the effects on the power supply of converter losses, but not
+      their effect on the machine's regulation. Also, because it is an average model, it cannot correctly
+      predict what happens when the safety margin (also known as modulation depth) is not enough to prevent
+      overstepping the maximum RMS phase voltage. For this kind of simulation a more 
+      complete inverter and control system is needed. This will be covered in the demo:
+      <a href="./13_VectorControl.html">
+      Permanent magnet synchronous 
+      motor vector control (advanced example)</a>.
+    </p>
+    <p>
+    
+    </p>
+    <hr style="border-width:0;">
+<div id="AMECopyright"></div>
+</body>
+</html>

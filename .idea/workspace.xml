@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f373e6a-2f83-4dce-b258-d73e0c261de1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/MasterThesis$test.coverage" NAME="test Coverage Results" MODIFIED="1557673612216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/MasterThesis$speed_eval.coverage" NAME="speed_eval Coverage Results" MODIFIED="1551434941575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/MasterThesis$pytest_in_test_speed_py.coverage" NAME="pytest in test_speed.py Coverage Results" MODIFIED="1551348541891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/MasterThesis$motor_analysis.coverage" NAME="motor_analysis Coverage Results" MODIFIED="1550831627199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/MasterThesis$Amesim_tensorflow.coverage" NAME="Amesim_tensorflow Coverage Results" MODIFIED="1557859604802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amesim" />
+    <SUITE FILE_PATH="coverage/MasterThesis$application.coverage" NAME="application Coverage Results" MODIFIED="1557153686207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/amesim" />
+    <SUITE FILE_PATH="coverage/MasterThesis$train.coverage" NAME="train Coverage Results" MODIFIED="1557937289770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/MasterThesis$ed_motor.coverage" NAME="ed_motor Coverage Results" MODIFIED="1550853151004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scinet_motor" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scinet_motor/ed_motor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amesim/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/amesim/Amesim_tensorflow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+              <folding>
+                <element signature="e#72#112#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scinet_motor/model_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scinet_motor/io_nn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sa</find>
+      <find>train</find>
+      <find>initi</find>
+      <find>initial</find>
+      <find>epoch</find>
+      <find>tf</find>
+      <find>summar</find>
+      <find>save</find>
+      <find>full</find>
+      <find>input_size</find>
+      <find>full_time_series</find>
+      <find>shape_val</find>
+      <find>step</find>
+      <find>state</find>
+      <find>decoder_l2_loss</find>
+      <find>log_dir</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>None</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scinet/io_nn.py" />
+        <option value="$PROJECT_DIR$/scinet/model.py" />
+        <option value="$PROJECT_DIR$/scinet/ed_motor.py" />
+        <option value="$PROJECT_DIR$/analysis/motor_analysis.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/model_test.py" />
+        <option value="$PROJECT_DIR$/analysis/test.py" />
+        <option value="$PROJECT_DIR$/analysis/test_speed.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/model.py" />
+        <option value="$PROJECT_DIR$/analysis/train.py" />
+        <option value="$PROJECT_DIR$/speed_eval.py" />
+        <option value="$PROJECT_DIR$/test_new.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/ed_motor.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/amesim/Amesim_tensorflow.py" />
+        <option value="$PROJECT_DIR$/train.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/io_nn.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/model_new.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2043" />
+    <option name="y" value="148" />
+    <option name="width" value="1550" />
+    <option name="height" value="942" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+              <item name="process_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+              <item name="scinet_motor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterThesis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterThesis" type="462c0819:PsiDirectoryNode" />
+              <item name="training_logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Research_Project/semantic-segmentation-suit" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../Thesis_Docs/MasterThesisv3/digital_twin/test.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\analysis" />
+      <recent name="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\tf_save" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="Amesim_tensorflow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MasterThesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/amesim" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/amesim/Amesim_tensorflow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="application" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MasterThesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/amesim" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/amesim/application.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="speed_eval" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MasterThesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\speed_eval.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MasterThesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MasterThesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.speed_eval" />
+      <item itemvalue="Python.application" />
+      <item itemvalue="Python.Amesim_tensorflow" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.Amesim_tensorflow" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.application" />
+        <item itemvalue="Python.speed_eval" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f373e6a-2f83-4dce-b258-d73e0c261de1" name="Default Changelist" comment="" />
+      <created>1550225338569</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550225338569</updated>
+      <workItem from="1550225339884" duration="934000" />
+      <workItem from="1550226292255" duration="10123000" />
+      <workItem from="1550473913544" duration="3486000" />
+      <workItem from="1550498972833" duration="1035000" />
+      <workItem from="1550500315794" duration="898000" />
+      <workItem from="1550667809678" duration="618000" />
+      <workItem from="1550689928698" duration="1904000" />
+      <workItem from="1550754091388" duration="30561000" />
+      <workItem from="1551030503178" duration="2425000" />
+      <workItem from="1551085143220" duration="599000" />
+      <workItem from="1551087176868" duration="6241000" />
+      <workItem from="1551105141755" duration="3341000" />
+      <workItem from="1551172461930" duration="16350000" />
+      <workItem from="1551275758909" duration="7392000" />
+      <workItem from="1551344489805" duration="13302000" />
+      <workItem from="1551375228847" duration="880000" />
+      <workItem from="1551430049499" duration="6213000" />
+      <workItem from="1551439246507" duration="152000" />
+      <workItem from="1551441175443" duration="1887000" />
+      <workItem from="1551779909356" duration="1339000" />
+      <workItem from="1551861846668" duration="6571000" />
+      <workItem from="1551953711619" duration="6756000" />
+      <workItem from="1552031887222" duration="18113000" />
+      <workItem from="1552131701693" duration="2844000" />
+      <workItem from="1552227722028" duration="2242000" />
+      <workItem from="1552301718323" duration="3049000" />
+      <workItem from="1552389565022" duration="12316000" />
+      <workItem from="1552465284151" duration="9768000" />
+      <workItem from="1552482771039" duration="4454000" />
+      <workItem from="1557215414404" duration="5079000" />
+      <workItem from="1557477092489" duration="22927000" />
+      <workItem from="1557837110986" duration="5939000" />
+      <workItem from="1557854796991" duration="10644000" />
+      <workItem from="1558269640394" duration="599000" />
+      <workItem from="1558598273689" duration="3994000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_speed_py - 2019.02.28 at 11h 08m 57s.xml">
+      <configuration name="pytest in test_speed.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_speed_py - 2019.02.28 at 11h 09m 04s.xml">
+      <configuration name="pytest in test_speed.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="231177000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-643" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26232114" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44475922" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.093000956" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32981783" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.20842217" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27238807" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30201343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41706616" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32981783" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.20842217" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/analysis/motor_analysis.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/analysis/motor_analysis.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/analysis/motor_analysis.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>397</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speed_eval.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speed_eval.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/speed_eval.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/train.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>228</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>231</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>197</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model.py</url>
+          <line>396</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/ed_motor.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/ed_motor.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>243</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>247</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>251</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>260</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>272</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>274</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>281</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>295</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>306</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>311</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>324</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>325</line>
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scinet_motor/model_new.py</url>
+          <line>332</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="speed_temp" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../nn_physical_concepts/scinet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#648#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="2809" column="4" selection-start-line="2809" selection-start-column="4" selection-end-line="2809" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/framework/op_def_library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/framework/errors_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8823">
+          <caret line="532" selection-start-line="532" selection-end-line="532" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/motor_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_low_freq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_new.py" />
+    <entry file="file://$PROJECT_DIR$/speed_eval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/ops/gen_nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4696" column="4" selection-start-line="4696" selection-start-column="4" selection-end-line="4696" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="1630" selection-start-line="1630" selection-end-line="1630" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="1576" selection-start-line="1576" selection-end-line="1576" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scinet_motor/model_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scinet_motor/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1364">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf_log/val_loss_per_epoch.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/matplotlib/axes/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4334">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amesim/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/deeplearning/Lib/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="818" column="6" selection-start-line="818" selection-start-column="6" selection-end-line="818" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tf_log/train_loss_per_epoch.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/training_logs/model_latent4_100/logs_train/train_loss_per_epoch.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scinet_motor/ed_motor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amesim/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amesim/Amesim_tensorflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scinet_motor/io_nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#72#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scinet_motor/model_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

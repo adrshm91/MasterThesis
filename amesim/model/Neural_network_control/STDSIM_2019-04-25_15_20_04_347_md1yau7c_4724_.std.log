@@ -1,0 +1,13 @@
+
+STDOUT: Instantiating a system with 3 unknowns.
+STDOUT: Simcenter Amesim version: 2019.1 (6103157).
+STDOUT: Initializing model for simulation...
+STDOUT: master launched
+STDOUT: Requesting cosimulation license ...
+STDOUT: got the license for cosimulation, continuing
+STDOUT: Requesting amesim_runtime license ...
+STDOUT: got the license for amesim_runtime, continuing
+STDOUT: Start model simulation...
+STDOUT: Total CPU time: 0.8125 seconds.
+STDOUT: master ended
+SUCCESS MESSAGE: Simcenter Amesim model PIDtunerSpeedControl terminated normally.

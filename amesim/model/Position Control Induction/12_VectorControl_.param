@@ -1,0 +1,190 @@
+EMDSCIMFOC01 instance 1 maximum stator phase current RMS magnitude [Arms] Is_Delta=0 Param_Id=9039 Recompile_Flag=0 Data_Path=Irmsmax@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator winding resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=9040 Recompile_Flag=0 Data_Path=Rs0@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator cyclic inductance [H] Is_Delta=0 Param_Id=9041 Recompile_Flag=0 Data_Path=Ls@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 rotor time constant at reference temperature [s] Is_Delta=0 Param_Id=9042 Recompile_Flag=0 Data_Path=taur0@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 dispersion coefficient [null] Is_Delta=0 Param_Id=9043 Recompile_Flag=0 Data_Path=sigma@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 time constant for rotor flux control [s] Is_Delta=0 Param_Id=9044 Recompile_Flag=0 Data_Path=taur2@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 maximum line-to-neutral voltage RMS magnitude for current control [Vrms] Is_Delta=0 Param_Id=9045 Recompile_Flag=0 Data_Path=Ulimcc@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 #stator current on d axis [A] Is_Delta=0 Param_Id=9046 Recompile_Flag=0 Data_Path=Isdinit@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 minimum rotor magnetizing current to estimate slip [A] Is_Delta=0 Param_Id=9047 Recompile_Flag=0 Data_Path=Isdmin@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop time constant for d axis [s] Is_Delta=0 Param_Id=9048 Recompile_Flag=0 Data_Path=Taud@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop time constant for q axis [s] Is_Delta=0 Param_Id=9049 Recompile_Flag=0 Data_Path=Tauq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop natural frequency for d axis [Hz] Is_Delta=0 Param_Id=9050 Recompile_Flag=0 Data_Path=wnd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop damping ratio for d axis [null] Is_Delta=0 Param_Id=9051 Recompile_Flag=0 Data_Path=ksid@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop natural frequency for q axis [Hz] Is_Delta=0 Param_Id=9052 Recompile_Flag=0 Data_Path=wnq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop damping ratio for q axis [null] Is_Delta=0 Param_Id=9053 Recompile_Flag=0 Data_Path=ksiq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 magnetization strategy Param_Id=9054 Recompile_Flag=0 Data_Path=strat@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 use machine as generator only Param_Id=9055 Recompile_Flag=0 Data_Path=genonly@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 compensate rotor flux time constant Param_Id=9056 Recompile_Flag=1 Data_Path=comptauR@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 close loop transfer function type Param_Id=9057 Recompile_Flag=1 Data_Path=TFtype@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 winding connection Param_Id=9058 Recompile_Flag=0 Data_Path=connectType@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 number of pole pairs Param_Id=9059 Recompile_Flag=0 Data_Path=p@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 line-to-neutral voltage DC component command at port 5 [V] Param_Id=9095 Recompile_Flag=0 Data_Path=dc@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor flux linkage angle [degree] Param_Id=9062 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=thetamrest@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for d axis [V] Param_Id=9067 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=ipartd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for q axis [V] Param_Id=9073 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=ipartq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor magnetizing current [A] Param_Id=9075 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Imrest@emd_SCIM_TorqueControl
+EBCT00 instance 1 offset to be subtracted from current [A] Is_Delta=0 Param_Id=9105 Recompile_Flag=0 Data_Path=offset@current_transducer
+EBCT00 instance 1 gain for measured current [null] Is_Delta=0 Param_Id=9106 Recompile_Flag=0 Data_Path=gain@current_transducer
+EBCT00 instance 1 sign convention: positive from Param_Id=9107 Recompile_Flag=0 Data_Path=conv@current_transducer
+EBCT00 instance 1 output voltage [V] Param_Id=9108 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=U@current_transducer
+EBCT00 instance 2 offset to be subtracted from current [A] Is_Delta=0 Param_Id=9115 Recompile_Flag=0 Data_Path=offset@current_transducer_1
+EBCT00 instance 2 gain for measured current [null] Is_Delta=0 Param_Id=9116 Recompile_Flag=0 Data_Path=gain@current_transducer_1
+EBCT00 instance 2 sign convention: positive from Param_Id=9117 Recompile_Flag=0 Data_Path=conv@current_transducer_1
+EBCT00 instance 2 output voltage [V] Param_Id=9118 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=U@current_transducer_1
+EBCT00 instance 3 offset to be subtracted from current [A] Is_Delta=0 Param_Id=9125 Recompile_Flag=0 Data_Path=offset@current_transducer_4
+EBCT00 instance 3 gain for measured current [null] Is_Delta=0 Param_Id=9126 Recompile_Flag=0 Data_Path=gain@current_transducer_4
+EBCT00 instance 3 sign convention: positive from Param_Id=9127 Recompile_Flag=0 Data_Path=conv@current_transducer_4
+EBCT00 instance 3 output voltage [V] Param_Id=9128 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=U@current_transducer_4
+ESCAVINV001 instance 1 switching frequency [Hz] Is_Delta=0 Param_Id=9145 Recompile_Flag=0 Data_Path=Fc@Average3PhaseInverter
+ESCAVINV001 instance 1 transistor forward threshold voltage [V] Is_Delta=0 Param_Id=9146 Recompile_Flag=0 Data_Path=Vtth@Average3PhaseInverter
+ESCAVINV001 instance 1 transistor on-state resistance [Ohm] Is_Delta=0 Param_Id=9147 Recompile_Flag=0 Data_Path=Rton@Average3PhaseInverter
+ESCAVINV001 instance 1 diode forward threshold voltage [V] Is_Delta=0 Param_Id=9148 Recompile_Flag=0 Data_Path=Vdth@Average3PhaseInverter
+ESCAVINV001 instance 1 diode forward resistance [Ohm] Is_Delta=0 Param_Id=9149 Recompile_Flag=0 Data_Path=Rdon@Average3PhaseInverter
+ESCAVINV001 instance 1 switching energy per period per phase at reference voltage and current [J] Is_Delta=0 Param_Id=9150 Recompile_Flag=0 Data_Path=Eswref@Average3PhaseInverter
+ESCAVINV001 instance 1 reference DC voltage [V] Is_Delta=0 Param_Id=9151 Recompile_Flag=0 Data_Path=Uref@Average3PhaseInverter
+ESCAVINV001 instance 1 reference current [A] Is_Delta=0 Param_Id=9152 Recompile_Flag=0 Data_Path=Iref@Average3PhaseInverter
+ESCAVINV001 instance 1 efficiency [null] Is_Delta=0 Param_Id=9153 Recompile_Flag=0 Data_Path=constEff@Average3PhaseInverter
+ESCAVINV001 instance 1 minimum power for efficiency calculation [W] Is_Delta=0 Param_Id=9154 Recompile_Flag=0 Data_Path=minP@Average3PhaseInverter
+ESCAVINV001 instance 1 minimum input voltage [V] Is_Delta=0 Param_Id=9155 Recompile_Flag=0 Data_Path=Umin@Average3PhaseInverter
+ESCAVINV001 instance 1 losses definition Param_Id=9156 Recompile_Flag=0 Data_Path=lossCalcMethod@Average3PhaseInverter
+ESCAVINV001 instance 1 space vector modulation Param_Id=9157 Recompile_Flag=0 Data_Path=modMet@Average3PhaseInverter
+ESCAVINV001 instance 1 interpolation type Param_Id=9158 Recompile_Flag=0 Data_Path=intltype@Average3PhaseInverter
+ESCAVINV001 instance 1 linear data out of range mode Param_Id=9159 Recompile_Flag=0 Data_Path=lmode@Average3PhaseInverter
+ESCAVINV001 instance 1 modulation discontinuity handling Param_Id=9160 Recompile_Flag=0 Data_Path=disc@Average3PhaseInverter
+ESCAVINV001 instance 1 discontinuity handling Param_Id=9161 Recompile_Flag=0 Data_Path=discT@Average3PhaseInverter
+ESCAVINV001 instance 1 cubic data out of range mode Param_Id=9162 Recompile_Flag=0 Data_Path=cmode@Average3PhaseInverter
+ESCAVINV001 instance 1 losses [W] datafile or expression as a function of RMS voltage [Vrms], RMS current [Arms], power factor [null], input DC voltage [V] and temperature [degC] ('Urms', 'Irms', 'pf', 'Uin' and 'Temp' in expression) Param_Id=9163 Recompile_Flag=0 Data_Path=userLoss@Average3PhaseInverter
+ESCAVINV001 instance 1 maximum line-to-neutral voltage RMS magnitude to DC voltage ratio Param_Id=9164 Recompile_Flag=0 Data_Path=UdcToUrms@Average3PhaseInverter
+THTS1 instance 1 temperature at port 1 [degC] Param_Id=9209 Recompile_Flag=0 Data_Path=t1@th_temperature_source_1
+CONS00 instance 1 constant value [null] Is_Delta=0 Param_Id=9235 Recompile_Flag=0 Linked_Variable_Path=k0GEN@constant_1 Data_Path=k@constant_1
+CONS00 instance 1 constant value - Linked variable [null] Param_Id=9236 Recompile_Flag=0 Is_Linked_Variable=1 Data_Path=k0GEN@constant_1
+EBVT01 instance 1 offset to be subtracted from voltage [V] Is_Delta=0 Param_Id=9244 Recompile_Flag=0 Data_Path=offset@voltmeter_1
+EBVT01 instance 1 gain for voltage measure [null] Is_Delta=0 Param_Id=9245 Recompile_Flag=0 Data_Path=gain@voltmeter_1
+EBVT01 instance 1 sign convention: positive pin Param_Id=9246 Recompile_Flag=0 Data_Path=conv@voltmeter_1
+EBVT01 instance 1 current at port 1 [A] Param_Id=9249 Recompile_Flag=0 Data_Path=I1@voltmeter_1
+EBVT01 instance 1 current at port 3 [A] Param_Id=9252 Recompile_Flag=0 Data_Path=I3@voltmeter_1
+EBVT01 instance 1 output current [A] Param_Id=9248 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=I@voltmeter_1
+GA00 instance 1 value of gain [null] Is_Delta=0 Param_Id=9254 Recompile_Flag=0 Linked_Variable_Path=k0GEN@elect01_1 Data_Path=k@elect01_1
+GA00 instance 1 value of gain - Linked variable [null] Param_Id=9255 Recompile_Flag=0 Is_Linked_Variable=1 Data_Path=k0GEN@elect01_1
+EBZV01 instance 1 zero volt voltage [V] Param_Id=9327 Recompile_Flag=0 Data_Path=V1@potential_reference_1
+W000 instance 1 angular speed (always zero) [rev/min] Param_Id=9544 Recompile_Flag=0 Data_Path=wzero@zeroomegasource_1
+W000 instance 1 fixed angle [degree] Param_Id=9545 Recompile_Flag=0 Data_Path=theta@zeroomegasource_1
+THTS1 instance 2 temperature at port 1 [degC] Param_Id=9546 Recompile_Flag=0 Data_Path=t1@th_temperature_source_4
+EMDSCIM11 instance 1 base apparent power [VA] Is_Delta=0 Param_Id=9566 Recompile_Flag=0 Data_Path=Sb@emd_InductionMachine_1
+EMDSCIM11 instance 1 base line-to-line voltage [V] Is_Delta=0 Param_Id=9567 Recompile_Flag=0 Data_Path=Vb@emd_InductionMachine_1
+EMDSCIM11 instance 1 base frequency [Hz] Is_Delta=0 Param_Id=9568 Recompile_Flag=0 Data_Path=fb@emd_InductionMachine_1
+EMDSCIM11 instance 1 reference temperature [degC] Is_Delta=0 Param_Id=9569 Recompile_Flag=0 Data_Path=T0@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=9570 Recompile_Flag=0 Data_Path=Rs0@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding resistance at reference temperature (pu) [perunit] Is_Delta=0 Param_Id=9571 Recompile_Flag=0 Data_Path=Rs0pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 corrective coefficient on stator winding resistance [1/K] Is_Delta=0 Param_Id=9572 Recompile_Flag=0 Data_Path=alphaRs@emd_InductionMachine_1
+EMDSCIM11 instance 1 unsaturated magnetizing inductance [H] Is_Delta=0 Param_Id=9573 Recompile_Flag=0 Data_Path=Lm0@emd_InductionMachine_1
+EMDSCIM11 instance 1 unsaturated magnetizing reactance (pu) [perunit] Is_Delta=0 Param_Id=9574 Recompile_Flag=0 Data_Path=Xm0pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator leakage inductance [H] Is_Delta=0 Param_Id=9575 Recompile_Flag=0 Data_Path=ls@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator leakage reactance (pu) [perunit] Is_Delta=0 Param_Id=9576 Recompile_Flag=0 Data_Path=Xspu@emd_InductionMachine_1
+EMDSCIM11 instance 1 iron losses resistance [Ohm] Is_Delta=0 Param_Id=9577 Recompile_Flag=0 Data_Path=RFe@emd_InductionMachine_1
+EMDSCIM11 instance 1 iron losses resistance (pu) [perunit] Is_Delta=0 Param_Id=9578 Recompile_Flag=0 Data_Path=RFepu@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=9579 Recompile_Flag=0 Data_Path=Rrp01@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 resistance at reference temperature (pu) [perunit] Is_Delta=0 Param_Id=9580 Recompile_Flag=0 Data_Path=Rrp01pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 2 resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=9581 Recompile_Flag=0 Data_Path=Rrp02@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 2 resistance at reference temperature (pu) [perunit] Is_Delta=0 Param_Id=9582 Recompile_Flag=0 Data_Path=Rrp02pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 3 resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=9583 Recompile_Flag=0 Data_Path=Rrp03@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 3 resistance at reference temperature (pu) [perunit] Is_Delta=0 Param_Id=9584 Recompile_Flag=0 Data_Path=Rrp03pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 corrective coefficient on rotor cage resistance [1/K] Is_Delta=0 Param_Id=9585 Recompile_Flag=0 Data_Path=alphaRr@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 leakage inductance [H] Is_Delta=0 Param_Id=9586 Recompile_Flag=0 Data_Path=lrp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 leakage reactance (pu) [perunit] Is_Delta=0 Param_Id=9587 Recompile_Flag=0 Data_Path=Xrp1pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 2 leakage inductance [H] Is_Delta=0 Param_Id=9588 Recompile_Flag=0 Data_Path=lrp2@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 2 leakage reactance (pu) [perunit] Is_Delta=0 Param_Id=9589 Recompile_Flag=0 Data_Path=Xrp2pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 3 leakage inductance [H] Is_Delta=0 Param_Id=9590 Recompile_Flag=0 Data_Path=lrp3@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 3 leakage reactance (pu) [perunit] Is_Delta=0 Param_Id=9591 Recompile_Flag=0 Data_Path=Xrp3pu@emd_InductionMachine_1
+EMDSCIM11 instance 1 minimum rotor magnetizing current for magnetizing inductance derivative computation [A] Is_Delta=0 Param_Id=9592 Recompile_Flag=0 Data_Path=ImMin@emd_InductionMachine_1
+EMDSCIM11 instance 1 minimum permitted fraction of magnetizing inductance [null] Is_Delta=0 Param_Id=9593 Recompile_Flag=0 Data_Path=LmFraction@emd_InductionMachine_1
+EMDSCIM11 instance 1 parameter definition mode Param_Id=9594 Recompile_Flag=0 Data_Path=defMode@emd_InductionMachine_1
+EMDSCIM11 instance 1 number of branches Param_Id=9595 Recompile_Flag=1 Data_Path=branchNumber@emd_InductionMachine_1
+EMDSCIM11 instance 1 saturation model Param_Id=9596 Recompile_Flag=1 Data_Path=satModel@emd_InductionMachine_1
+EMDSCIM11 instance 1 iron losses model Param_Id=9597 Recompile_Flag=1 Data_Path=FeLosses@emd_InductionMachine_1
+EMDSCIM11 instance 1 winding connection Param_Id=9598 Recompile_Flag=0 Data_Path=connectType@emd_InductionMachine_1
+EMDSCIM11 instance 1 number of pole pairs Param_Id=9599 Recompile_Flag=0 Data_Path=p@emd_InductionMachine_1
+EMDSCIM11 instance 1 interpolation type Param_Id=9600 Recompile_Flag=0 Data_Path=intltype@emd_InductionMachine_1
+EMDSCIM11 instance 1 linear data out of range mode Param_Id=9601 Recompile_Flag=0 Data_Path=lmode@emd_InductionMachine_1
+EMDSCIM11 instance 1 discontinuity handling Param_Id=9602 Recompile_Flag=0 Data_Path=disc@emd_InductionMachine_1
+EMDSCIM11 instance 1 cubic data out of range mode Param_Id=9603 Recompile_Flag=0 Data_Path=cmode@emd_InductionMachine_1
+EMDSCIM11 instance 1 saturation coefficient [null] datafile or expression as a function of magnetizing current [A] (Im) Param_Id=9604 Recompile_Flag=0 Data_Path=Ksfile@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor electrical angle [degree] Param_Id=9614 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=thetaer@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on d axis [A] Param_Id=9616 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Isd@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on q axis [A] Param_Id=9618 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Isq@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on d axis [A] Param_Id=9619 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Irdp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on q axis [A] Param_Id=9620 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Irqp1@emd_InductionMachine_1
+RN001 instance 1 gear ratio [null] Is_Delta=0 Param_Id=9781 Recompile_Flag=0 Data_Path=alpha@reducer
+MECRL0 instance 1 moment of inertia [kgm**2] Is_Delta=0 Param_Id=9786 Recompile_Flag=0 Data_Path=J@rotaryload2ports
+MECRL0 instance 1 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=9787 Recompile_Flag=0 Data_Path=vis@rotaryload2ports
+MECRL0 instance 1 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=9788 Recompile_Flag=0 Data_Path=coul@rotaryload2ports
+MECRL0 instance 1 stiction torque [Nm] Is_Delta=0 Param_Id=9789 Recompile_Flag=0 Data_Path=stict@rotaryload2ports
+MECRL0 instance 1 use friction Param_Id=9790 Recompile_Flag=0 Data_Path=friction@rotaryload2ports
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Param_Id=9801 Recompile_Flag=0 Data_Path=w@rotaryload2ports
+MECRL0 instance 2 moment of inertia [kgm**2] Is_Delta=0 Param_Id=9805 Recompile_Flag=0 Data_Path=J@rotaryload2ports_2
+MECRL0 instance 2 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=9806 Recompile_Flag=0 Data_Path=vis@rotaryload2ports_2
+MECRL0 instance 2 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=9807 Recompile_Flag=0 Data_Path=coul@rotaryload2ports_2
+MECRL0 instance 2 stiction torque [Nm] Is_Delta=0 Param_Id=9808 Recompile_Flag=0 Data_Path=stict@rotaryload2ports_2
+MECRL0 instance 2 use friction Param_Id=9809 Recompile_Flag=0 Data_Path=friction@rotaryload2ports_2
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Param_Id=9820 Recompile_Flag=0 Data_Path=w@rotaryload2ports_2
+RSD00 instance 1 stiffness [Nm/degree] Is_Delta=0 Param_Id=9824 Recompile_Flag=0 Data_Path=ktor@rotaryspringdamper
+RSD00 instance 1 damper rating [Nm/(rev/min)] Is_Delta=0 Param_Id=9825 Recompile_Flag=0 Data_Path=rtor@rotaryspringdamper
+RSD00 instance 1 relative angular displacement [degree] Param_Id=9826 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=are@rotaryspringdamper
+MECRSS0B instance 1 offset to be subtracted from angular velocity [rev/min] Is_Delta=0 Param_Id=9842 Recompile_Flag=0 Data_Path=offset@closedLoopSpeed
+MECRSS0B instance 1 gain for signal output [min/rev] Is_Delta=0 Param_Id=9843 Recompile_Flag=0 Data_Path=gain@closedLoopSpeed
+MECRSS0B instance 1 sign convention: positive from Param_Id=9844 Recompile_Flag=0 Data_Path=conv@closedLoopSpeed
+UD00 instance 1 time at which duty cycle starts [s] Is_Delta=0 Param_Id=9850 Recompile_Flag=0 Data_Path=tstart@piecewiselinear_1
+UD00 instance 1 output at start of stage 1 [null] Is_Delta=0 Param_Id=9851 Recompile_Flag=0 Data_Path=start1@piecewiselinear_1
+UD00 instance 1 output at end of stage 1 [null] Is_Delta=0 Param_Id=9852 Recompile_Flag=0 Data_Path=end1@piecewiselinear_1
+UD00 instance 1 duration of stage 1 [s] Is_Delta=0 Param_Id=9853 Recompile_Flag=0 Data_Path=t1@piecewiselinear_1
+UD00 instance 1 output at start of stage 2 [null] Is_Delta=0 Param_Id=9854 Recompile_Flag=0 Data_Path=start2@piecewiselinear_1
+UD00 instance 1 output at end of stage 2 [null] Is_Delta=0 Param_Id=9855 Recompile_Flag=0 Data_Path=end2@piecewiselinear_1
+UD00 instance 1 duration of stage 2 [s] Is_Delta=0 Param_Id=9856 Recompile_Flag=0 Data_Path=t2@piecewiselinear_1
+UD00 instance 1 output at start of stage 3 [null] Is_Delta=0 Param_Id=9857 Recompile_Flag=0 Data_Path=start3@piecewiselinear_1
+UD00 instance 1 output at end of stage 3 [null] Is_Delta=0 Param_Id=9858 Recompile_Flag=0 Data_Path=end3@piecewiselinear_1
+UD00 instance 1 duration of stage 3 [s] Is_Delta=0 Param_Id=9859 Recompile_Flag=0 Data_Path=t3@piecewiselinear_1
+UD00 instance 1 output at start of stage 4 [null] Is_Delta=0 Param_Id=9860 Recompile_Flag=0 Data_Path=start4@piecewiselinear_1
+UD00 instance 1 output at end of stage 4 [null] Is_Delta=0 Param_Id=9861 Recompile_Flag=0 Data_Path=end4@piecewiselinear_1
+UD00 instance 1 duration of stage 4 [s] Is_Delta=0 Param_Id=9862 Recompile_Flag=0 Data_Path=t4@piecewiselinear_1
+UD00 instance 1 output at start of stage 5 [null] Is_Delta=0 Param_Id=9863 Recompile_Flag=0 Data_Path=start5@piecewiselinear_1
+UD00 instance 1 output at end of stage 5 [null] Is_Delta=0 Param_Id=9864 Recompile_Flag=0 Data_Path=end5@piecewiselinear_1
+UD00 instance 1 duration of stage 5 [s] Is_Delta=0 Param_Id=9865 Recompile_Flag=0 Data_Path=t5@piecewiselinear_1
+UD00 instance 1 output at start of stage 6 [null] Is_Delta=0 Param_Id=9866 Recompile_Flag=0 Data_Path=start6@piecewiselinear_1
+UD00 instance 1 output at end of stage 6 [null] Is_Delta=0 Param_Id=9867 Recompile_Flag=0 Data_Path=end6@piecewiselinear_1
+UD00 instance 1 duration of stage 6 [s] Is_Delta=0 Param_Id=9868 Recompile_Flag=0 Data_Path=t6@piecewiselinear_1
+UD00 instance 1 output at start of stage 7 [null] Is_Delta=0 Param_Id=9869 Recompile_Flag=0 Data_Path=start7@piecewiselinear_1
+UD00 instance 1 output at end of stage 7 [null] Is_Delta=0 Param_Id=9870 Recompile_Flag=0 Data_Path=end7@piecewiselinear_1
+UD00 instance 1 duration of stage 7 [s] Is_Delta=0 Param_Id=9871 Recompile_Flag=0 Data_Path=t7@piecewiselinear_1
+UD00 instance 1 output at start of stage 8 [null] Is_Delta=0 Param_Id=9872 Recompile_Flag=0 Data_Path=start8@piecewiselinear_1
+UD00 instance 1 output at end of stage 8 [null] Is_Delta=0 Param_Id=9873 Recompile_Flag=0 Data_Path=end8@piecewiselinear_1
+UD00 instance 1 duration of stage 8 [s] Is_Delta=0 Param_Id=9874 Recompile_Flag=0 Data_Path=t8@piecewiselinear_1
+UD00 instance 1 number of stages Param_Id=9875 Recompile_Flag=0 Data_Path=nstages@piecewiselinear_1
+UD00 instance 1 cyclic Param_Id=9876 Recompile_Flag=0 Data_Path=iscyclic@piecewiselinear_1
+UD00 instance 2 time at which duty cycle starts [s] Is_Delta=0 Param_Id=9887 Recompile_Flag=0 Data_Path=tstart@piecewiselinear_2
+UD00 instance 2 output at start of stage 1 [null] Is_Delta=0 Param_Id=9888 Recompile_Flag=0 Data_Path=start1@piecewiselinear_2
+UD00 instance 2 output at end of stage 1 [null] Is_Delta=0 Param_Id=9889 Recompile_Flag=0 Data_Path=end1@piecewiselinear_2
+UD00 instance 2 duration of stage 1 [s] Is_Delta=0 Param_Id=9890 Recompile_Flag=0 Data_Path=t1@piecewiselinear_2
+UD00 instance 2 output at start of stage 2 [null] Is_Delta=0 Param_Id=9891 Recompile_Flag=0 Data_Path=start2@piecewiselinear_2
+UD00 instance 2 output at end of stage 2 [null] Is_Delta=0 Param_Id=9892 Recompile_Flag=0 Data_Path=end2@piecewiselinear_2
+UD00 instance 2 duration of stage 2 [s] Is_Delta=0 Param_Id=9893 Recompile_Flag=0 Data_Path=t2@piecewiselinear_2
+UD00 instance 2 output at start of stage 3 [null] Is_Delta=0 Param_Id=9894 Recompile_Flag=0 Data_Path=start3@piecewiselinear_2
+UD00 instance 2 output at end of stage 3 [null] Is_Delta=0 Param_Id=9895 Recompile_Flag=0 Data_Path=end3@piecewiselinear_2
+UD00 instance 2 duration of stage 3 [s] Is_Delta=0 Param_Id=9896 Recompile_Flag=0 Data_Path=t3@piecewiselinear_2
+UD00 instance 2 output at start of stage 4 [null] Is_Delta=0 Param_Id=9897 Recompile_Flag=0 Data_Path=start4@piecewiselinear_2
+UD00 instance 2 output at end of stage 4 [null] Is_Delta=0 Param_Id=9898 Recompile_Flag=0 Data_Path=end4@piecewiselinear_2
+UD00 instance 2 duration of stage 4 [s] Is_Delta=0 Param_Id=9899 Recompile_Flag=0 Data_Path=t4@piecewiselinear_2
+UD00 instance 2 output at start of stage 5 [null] Is_Delta=0 Param_Id=9900 Recompile_Flag=0 Data_Path=start5@piecewiselinear_2
+UD00 instance 2 output at end of stage 5 [null] Is_Delta=0 Param_Id=9901 Recompile_Flag=0 Data_Path=end5@piecewiselinear_2
+UD00 instance 2 duration of stage 5 [s] Is_Delta=0 Param_Id=9902 Recompile_Flag=0 Data_Path=t5@piecewiselinear_2
+UD00 instance 2 output at start of stage 6 [null] Is_Delta=0 Param_Id=9903 Recompile_Flag=0 Data_Path=start6@piecewiselinear_2
+UD00 instance 2 output at end of stage 6 [null] Is_Delta=0 Param_Id=9904 Recompile_Flag=0 Data_Path=end6@piecewiselinear_2
+UD00 instance 2 duration of stage 6 [s] Is_Delta=0 Param_Id=9905 Recompile_Flag=0 Data_Path=t6@piecewiselinear_2
+UD00 instance 2 output at start of stage 7 [null] Is_Delta=0 Param_Id=9906 Recompile_Flag=0 Data_Path=start7@piecewiselinear_2
+UD00 instance 2 output at end of stage 7 [null] Is_Delta=0 Param_Id=9907 Recompile_Flag=0 Data_Path=end7@piecewiselinear_2
+UD00 instance 2 duration of stage 7 [s] Is_Delta=0 Param_Id=9908 Recompile_Flag=0 Data_Path=t7@piecewiselinear_2
+UD00 instance 2 output at start of stage 8 [null] Is_Delta=0 Param_Id=9909 Recompile_Flag=0 Data_Path=start8@piecewiselinear_2
+UD00 instance 2 output at end of stage 8 [null] Is_Delta=0 Param_Id=9910 Recompile_Flag=0 Data_Path=end8@piecewiselinear_2
+UD00 instance 2 duration of stage 8 [s] Is_Delta=0 Param_Id=9911 Recompile_Flag=0 Data_Path=t8@piecewiselinear_2
+UD00 instance 2 number of stages Param_Id=9912 Recompile_Flag=0 Data_Path=nstages@piecewiselinear_2
+UD00 instance 2 cyclic Param_Id=9913 Recompile_Flag=0 Data_Path=iscyclic@piecewiselinear_2

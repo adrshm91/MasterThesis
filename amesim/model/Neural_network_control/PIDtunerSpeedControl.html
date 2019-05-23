@@ -1,0 +1,128 @@
+<html>
+<head>
+  <script type="text/javascript" src="qthelp://lmsimagine.lab/ame_dir/doc/javascript/init_submodel.js"></script>
+  <title>Speed Control Loop</title>  
+</head>
+<body bgcolor="white" link="blue" vlink="purple">
+
+<h1 align="center"><font size="6" color="#3757A7">Speed control calibration with the PID tuner</font></h1>
+
+
+<h2><u>Purpose</u></h2>
+ <p>This demo illustrates how to calibrate a speed control loop for an electro-mechanical system with help of the 
+ <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a></p>
+
+ 
+<h2><u>Open this demo</u></h2>
+ <p><a href="qthelp://lmsimagine.lab/ame_dir/demo/Libraries/SIG/PIDtunerSpeedControl.ame">$AME/demo/Libraries/SIG/PIDtunerSpeedControl.ame</a></p> 
+
+
+<h2><u>Description</u></h2>
+ <p>Let's consider a 48 V, 400 W drive system as depicted in Figure 1. The system is made of a brushless DC motor which moves a reciprocating load through a 
+ reduction gear. The load is connected to the reducer shaft with a coupling device represented by its stiffness and damping. 
+ The load consists of an inertia and a resistive torque proportional to speed (e.g. viscous friction). External torque 
+ disturbance may also affect the load.</p>
+ <p>The objective is to control the speed of the load so that it follows a mission profile made of constant acceleration and constant speed 
+ sequences in the 0-300 rpm range. For this purpose, the system is equipped with a speed sensor and a varying voltage source to control the DC motor 
+ (0 to +48 V).</p> 
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/plant.png"></p> 
+ <p align="center"><b>Figure 1: Plant model and mission profile</b></p>
+  <br>
+ 
+ <h3>Before closing the loop</h3>
+ <p>Although this step is not required when using the PID tuner, let's quickly analyze the system we are about to control. For this, let's run a simulation 
+ to compute linearization of the open-loop model and plot its Bode diagram (available in the plot configuration <i>open-loop Bode diagram</i>). One can 
+ recognize a low-pass system with two resonances around 17 Hz and 206 Hz coming from mechanical and electrical dynamics.</p>
+ 
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/bodeOpenLoop.png"></p> 
+ <p align="center"><b>Figure 2: Open-loop frequency response of the plant</b></p>
+ <br>
+ 
+  
+ <h3>Prepare for control synthesis</h3>
+ <p>Let's close the loop using the PID controller <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/submodels/SIGPIDT0.html">SIGPIDT0</a>. According 
+ to the <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a> guidelines,</p>
+ <ul>
+   <li>The speed target is connected to port 3, the speed sensor signal to port 1.</li> 
+   <li>The output of the PID is connected to the voltage source.</li>
+   <li><i>control setpoint at port 3</i> is declared as <i>control</i> and <i>plant value at port 1</i> as <i>observer</i></li>
+   <li>Linearization dates are added to compute linearization at different operating speeds.</li>
+   <li>The default proportional gain is scaled for this system with a starting value given by <i>kP = nominal PID output / max load speed = 30 V / 300 rpm = 
+   0.1.</i></li>
+ </ul>
+  
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/closedLoopModel.png"></p> 
+ <p align="center"><b>Figure 3: Closed-loop model</b></p>
+ <br>
+ 
+ <p>The system can be simulated to check that the load is moving in a stable fashion.</p>
+ 
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/initialResults.png"></p> 
+ <p align="center"><b>Figure 4: Initial results with pre-scaling of Kp</b></p>
+ <br>
+ 
+ 
+ <h3>Control synthesis, step 1</h3>
+ <p>Let's open the <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a> by clicking on its icon, 
+ either from the <i>Variables</i> or from the <i>Parameters</i> view. The tool loads linear analysis data and displays the Bode diagram and the 
+ step response as depicted on the left hand side of Figure 5. Let's first <b>adjust default frequency and time limits</b> to focus on the interesting 
+ part of those curves (e.g. dominant modes centered in the frequency range, full transient for step response). For this, go into the <i>Options</i> 
+ menu and change the frequency range of interest to 1-1000 Hz and the time scale to 0.2 s. One can recognize the diagram that was extracted previously 
+ from the stand-alone open-loop model.</p>
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/changeOptions.png"></p> 
+ <p align="center"><b>Figure 5: Adjusting frequency and time scales</b></p>
+ <br>
+ 
+ <p>The plant is now correctly loaded. By changing the linearization time from the corresponding combo box, it can confirmed that this 
+ model is time invariant since the Bode curve doesn't change with linearization point. Therefore, we don't have to think about which one to 
+ select for gain synthesis and we can move to the next step.</p>
+ <br>
+ 
+ <h3>Control synthesis, step 2</h3>
+ <p>A simplified model has to be fitted on top of this linearization with the <i>Plant estimate widget</i>. Although this can be done manually by 
+ selecting a model type in the list and tuning its parameters until a good match is found, let's try the <b>auto-fitting</b> feature by hitting the 
+ <i>Find best estimate</i> button. The tool quickly converges to a second order model as shown in Figure 6. What matters here is to correctly capture 
+ the dominant dynamic which is best represented by the step response or by the left hand side of the frequency response. Model fit is completed, so 
+ we can move to the PID tuning by hitting the <i>Next</i> button</p>
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/modelFit.png"></p> 
+ <p align="center"><b>Figure 6: Fitting a model</b></p>
+ <br>
+ 
+ <h3>Control synthesis, step 3</h3>
+ <p>By selecting a slower or a faster response with the slider bar, the tool automatically computes the PID gains. Therefore, calibration is about 
+ choosing the desired dynamic, while taking care of stability margins to deal with potential perturbations or plant variations. The tuning setup 
+ can be applied to the submodel with the <i>Apply</i> button. After updating the simulation, results can be confirmed using the plot 
+ configuration <i>control</i>.</p>
+ <p>Let's take 2 tuning examples:</p>
+ <ul>
+   <li>A <b>robust</b> tuning (8 Hz, see Figure 7) which provides smooth response and acceptable perturbation rejection between t = 0.45 and 0.7 s. 
+   Stability margins are rather conservative (90.9 deg and 12.1 dB).</li>
+   <li>A more <b>dynamic</b> tuning (21 Hz, see Figure 8) which pushes the limit up very low gain margin (3.7 dB). The high frequency mode of the 
+   system is now clearly excited with pretty poor damping. The systems performs faster but might become unstable for larger perturbations 
+   due to its low margin.</li>
+ </ul>
+ 
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/softTuning.png"></p> 
+ <p align="center"><b>Figure 7: Closed-loop response with robust tuning</b></p>
+ <br>
+ 
+ <p align="center"><img src="./PIDtunerSpeedControl_fichiers/agressiveTuning.png"></p> 
+ <p align="center"><b>Figure 8: Closed-loop response with dynamic tuning</b></p>
+ <br>
+ 
+ <p>In the example above, the controller doesn't reach the upper voltage limit. One can however protect the system by enabling saturation of the PID output. 
+ For this, turn the <i>limit output</i> option of the PID to <i>yes</i> and set max value to 48. Default settings are recommended for saturation (e.g. <i>back calculation and tracking</i> mode with 
+ <i>Ks = Ki</i>). Performance can still be fine tuned either from the slider bar or by editing gains individually (preferably in the tool to benefit from the 
+ pre-visualization of their influence).</p> 
+ <br>
+ 
+
+<h2><u>See also</u></h2> 
+ <p>Adding a position control loop on this system by <a href="qthelp://lmsimagine.lab/ame_dir/demo/Libraries/SIG/PIDtunerPositionControl.html">cascading 2 PIDs</a> 
+ and leveraging the PID tuner.</p>
+ 
+ 
+<hr style="border-width:0;">
+<div id="AMECopyright"></div>
+</body>
+</html>

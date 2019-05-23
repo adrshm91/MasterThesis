@@ -1,0 +1,72 @@
+W000 instance 1 angular speed (always zero) [rev/min] Param_Id=15 Recompile_Flag=0 Data_Path=wzero@zeroomegasource
+W000 instance 1 fixed angle [degree] Param_Id=16 Recompile_Flag=0 Data_Path=theta@zeroomegasource
+THTS1 instance 1 temperature at port 1 [degC] Param_Id=17 Recompile_Flag=0 Data_Path=t1@th_temperature_source
+EBZV01 instance 1 zero volt voltage [V] Param_Id=18 Recompile_Flag=0 Data_Path=V1@potential_reference
+EMDPMDC01 instance 1 reference temperature [degC] Is_Delta=0 Param_Id=19 Recompile_Flag=0 Data_Path=T0@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 armature winding resistance at reference temperature [Ohm] Is_Delta=0 Param_Id=20 Recompile_Flag=0 Data_Path=Ra0@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 corrective coefficient on armature winding resistance [1/K] Is_Delta=0 Param_Id=21 Recompile_Flag=0 Data_Path=alphaRa@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 armature winding inductance [H] Is_Delta=0 Param_Id=22 Recompile_Flag=0 Data_Path=La@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 electromotive force and torque constant at reference temperature [V*s/rad] Is_Delta=0 Param_Id=23 Recompile_Flag=0 Data_Path=Kt0@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 corrective coefficient on electromotive force and torque constant [1/K] Is_Delta=0 Param_Id=24 Recompile_Flag=0 Data_Path=alphaKt@emd_DirectCurrentMachine
+EMDPMDC01 instance 1 armature winding input current [A] Param_Id=26 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=Ia@emd_DirectCurrentMachine
+EBZV01 instance 2 zero volt voltage [V] Param_Id=57 Recompile_Flag=0 Data_Path=V1@potential_reference_1
+RN001 instance 1 gear ratio [null] Is_Delta=0 Param_Id=58 Recompile_Flag=0 Data_Path=alpha@reducer_1
+MECRSS0B instance 1 offset to be subtracted from angular velocity [rev/min] Is_Delta=0 Param_Id=63 Recompile_Flag=0 Data_Path=offset@openLoopSpeed
+MECRSS0B instance 1 gain for signal output [min/rev] Is_Delta=0 Param_Id=64 Recompile_Flag=0 Data_Path=gain@openLoopSpeed
+MECRSS0B instance 1 sign convention: positive from Param_Id=65 Recompile_Flag=0 Data_Path=conv@openLoopSpeed
+CONS00 instance 1 constant value [null] Is_Delta=0 Param_Id=71 Recompile_Flag=0 Linked_Variable_Path=k0GEN@openLoopCmd Data_Path=k@openLoopCmd
+CONS00 instance 1 constant value - Linked variable [null] Param_Id=72 Recompile_Flag=0 Is_Linked_Variable=1 Data_Path=k0GEN@openLoopCmd
+MECRL0 instance 1 moment of inertia [kgm**2] Is_Delta=0 Param_Id=74 Recompile_Flag=0 Data_Path=J@rotaryload2ports_1
+MECRL0 instance 1 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=75 Recompile_Flag=0 Data_Path=vis@rotaryload2ports_1
+MECRL0 instance 1 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=76 Recompile_Flag=0 Data_Path=coul@rotaryload2ports_1
+MECRL0 instance 1 stiction torque [Nm] Is_Delta=0 Param_Id=77 Recompile_Flag=0 Data_Path=stict@rotaryload2ports_1
+MECRL0 instance 1 use friction Param_Id=78 Recompile_Flag=0 Data_Path=friction@rotaryload2ports_1
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Param_Id=89 Recompile_Flag=0 Data_Path=w@rotaryload2ports_1
+MECRL0 instance 2 moment of inertia [kgm**2] Is_Delta=0 Param_Id=93 Recompile_Flag=0 Data_Path=J@rotaryload2ports_3
+MECRL0 instance 2 coefficient of viscous friction [Nm/(rev/min)] Is_Delta=0 Param_Id=94 Recompile_Flag=0 Data_Path=vis@rotaryload2ports_3
+MECRL0 instance 2 Coulomb friction torque [Nm] Is_Delta=0 Param_Id=95 Recompile_Flag=0 Data_Path=coul@rotaryload2ports_3
+MECRL0 instance 2 stiction torque [Nm] Is_Delta=0 Param_Id=96 Recompile_Flag=0 Data_Path=stict@rotaryload2ports_3
+MECRL0 instance 2 use friction Param_Id=97 Recompile_Flag=0 Data_Path=friction@rotaryload2ports_3
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Param_Id=108 Recompile_Flag=0 Data_Path=w@rotaryload2ports_3
+RSD00 instance 1 stiffness [Nm/degree] Is_Delta=0 Param_Id=112 Recompile_Flag=0 Data_Path=ktor@rotaryspringdamper_1
+RSD00 instance 1 damper rating [Nm/(rev/min)] Is_Delta=0 Param_Id=113 Recompile_Flag=0 Data_Path=rtor@rotaryspringdamper_1
+RSD00 instance 1 relative angular displacement [degree] Param_Id=114 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=are@rotaryspringdamper_1
+UD00 instance 1 time at which duty cycle starts [s] Is_Delta=0 Param_Id=130 Recompile_Flag=0 Data_Path=tstart@piecewiselinear
+UD00 instance 1 output at start of stage 1 [null] Is_Delta=0 Param_Id=131 Recompile_Flag=0 Data_Path=start1@piecewiselinear
+UD00 instance 1 output at end of stage 1 [null] Is_Delta=0 Param_Id=132 Recompile_Flag=0 Data_Path=end1@piecewiselinear
+UD00 instance 1 duration of stage 1 [s] Is_Delta=0 Param_Id=133 Recompile_Flag=0 Data_Path=t1@piecewiselinear
+UD00 instance 1 output at start of stage 2 [null] Is_Delta=0 Param_Id=134 Recompile_Flag=0 Data_Path=start2@piecewiselinear
+UD00 instance 1 output at end of stage 2 [null] Is_Delta=0 Param_Id=135 Recompile_Flag=0 Data_Path=end2@piecewiselinear
+UD00 instance 1 duration of stage 2 [s] Is_Delta=0 Param_Id=136 Recompile_Flag=0 Data_Path=t2@piecewiselinear
+UD00 instance 1 output at start of stage 3 [null] Is_Delta=0 Param_Id=137 Recompile_Flag=0 Data_Path=start3@piecewiselinear
+UD00 instance 1 output at end of stage 3 [null] Is_Delta=0 Param_Id=138 Recompile_Flag=0 Data_Path=end3@piecewiselinear
+UD00 instance 1 duration of stage 3 [s] Is_Delta=0 Param_Id=139 Recompile_Flag=0 Data_Path=t3@piecewiselinear
+UD00 instance 1 output at start of stage 4 [null] Is_Delta=0 Param_Id=140 Recompile_Flag=0 Data_Path=start4@piecewiselinear
+UD00 instance 1 output at end of stage 4 [null] Is_Delta=0 Param_Id=141 Recompile_Flag=0 Data_Path=end4@piecewiselinear
+UD00 instance 1 duration of stage 4 [s] Is_Delta=0 Param_Id=142 Recompile_Flag=0 Data_Path=t4@piecewiselinear
+UD00 instance 1 output at start of stage 5 [null] Is_Delta=0 Param_Id=143 Recompile_Flag=0 Data_Path=start5@piecewiselinear
+UD00 instance 1 output at end of stage 5 [null] Is_Delta=0 Param_Id=144 Recompile_Flag=0 Data_Path=end5@piecewiselinear
+UD00 instance 1 duration of stage 5 [s] Is_Delta=0 Param_Id=145 Recompile_Flag=0 Data_Path=t5@piecewiselinear
+UD00 instance 1 output at start of stage 6 [null] Is_Delta=0 Param_Id=146 Recompile_Flag=0 Data_Path=start6@piecewiselinear
+UD00 instance 1 output at end of stage 6 [null] Is_Delta=0 Param_Id=147 Recompile_Flag=0 Data_Path=end6@piecewiselinear
+UD00 instance 1 duration of stage 6 [s] Is_Delta=0 Param_Id=148 Recompile_Flag=0 Data_Path=t6@piecewiselinear
+UD00 instance 1 output at start of stage 7 [null] Is_Delta=0 Param_Id=149 Recompile_Flag=0 Data_Path=start7@piecewiselinear
+UD00 instance 1 output at end of stage 7 [null] Is_Delta=0 Param_Id=150 Recompile_Flag=0 Data_Path=end7@piecewiselinear
+UD00 instance 1 duration of stage 7 [s] Is_Delta=0 Param_Id=151 Recompile_Flag=0 Data_Path=t7@piecewiselinear
+UD00 instance 1 output at start of stage 8 [null] Is_Delta=0 Param_Id=152 Recompile_Flag=0 Data_Path=start8@piecewiselinear
+UD00 instance 1 output at end of stage 8 [null] Is_Delta=0 Param_Id=153 Recompile_Flag=0 Data_Path=end8@piecewiselinear
+UD00 instance 1 duration of stage 8 [s] Is_Delta=0 Param_Id=154 Recompile_Flag=0 Data_Path=t8@piecewiselinear
+UD00 instance 1 number of stages Param_Id=155 Recompile_Flag=0 Data_Path=nstages@piecewiselinear
+UD00 instance 1 cyclic Param_Id=156 Recompile_Flag=0 Data_Path=iscyclic@piecewiselinear
+EBCT00 instance 1 offset to be subtracted from current [A] Is_Delta=0 Param_Id=158 Recompile_Flag=0 Data_Path=offset@current_transducer
+EBCT00 instance 1 gain for measured current [null] Is_Delta=0 Param_Id=159 Recompile_Flag=0 Data_Path=gain@current_transducer
+EBCT00 instance 1 sign convention: positive from Param_Id=160 Recompile_Flag=0 Data_Path=conv@current_transducer
+EBCT00 instance 1 output voltage [V] Param_Id=161 Recompile_Flag=0 Is_Linked_Variable=0 Data_Path=U@current_transducer
+MECTS0B instance 1 offset to be subtracted from torque [Nm] Is_Delta=0 Param_Id=169 Recompile_Flag=0 Data_Path=offset@torquesensor2
+MECTS0B instance 1 gain for signal output [1/(Nm)] Is_Delta=0 Param_Id=170 Recompile_Flag=0 Data_Path=gain@torquesensor2
+MECTS0B instance 1 sign convention: positive from Param_Id=171 Recompile_Flag=0 Data_Path=conv@torquesensor2
+DYNCOSIMSHM01 instance 1 sample time [s] Is_Delta=0 Param_Id=177 Recompile_Flag=0 Data_Path=samptime@dynamic_cosim_shm_discrete
+DYNCOSIMSHM01 instance 1 mode Param_Id=178 Recompile_Flag=0 Data_Path=mode@dynamic_cosim_shm_discrete
+DYNCOSIMSHM01 instance 1 shared memory identifier Param_Id=179 Recompile_Flag=0 Data_Path=shmName@dynamic_cosim_shm_discrete
+DYNCOSIMSHM01 instance 1 output variable at port 1 [null] Param_Id=180 Recompile_Flag=0 Data_Path=p1__outputs@dynamic_cosim_shm_discrete
+DYNCOSIMSHM01 instance 1 output variable at port 2 [null] Param_Id=181 Recompile_Flag=0 Data_Path=p2__outputs@dynamic_cosim_shm_discrete

@@ -1,0 +1,124 @@
+<html>
+<head>
+  <script type="text/javascript" src="qthelp://lmsimagine.lab/ame_dir/doc/javascript/init_submodel.js"></script>
+  <title>Squirrel-Cage Induction Machine (SCIM) characteristics</title>
+</head>
+  
+<body style="background-color: white;" link="blue" vlink="purple">
+
+<h1 align="center"><font color="#3757a7" size="6">Squirrel-Cage Induction Machine (SCIM) characteristics</font></h1>
+
+<h2><u>Purpose</u></h2>
+<p>The purpose of this demonstration is to plot the mechanical characteristic of an induction machine.
+A common shape for an induction machine characteristic is:</p>
+<p align="center"><img title="Mechanical characteristic for induction machine" src="05_characteristics_for_induction_machine_fichiers/induction_machine_1.png"></p>
+<p align="center"><b>Figure 1: Classical mechanical characteristic for induction motor</b></p>
+<p>Two regions can be discerned:
+<ul><li>a first one, for mechanical speeds lower than the maximum torque point (unstable for some resistive loads)</li>
+<li>a second one, for mechanical speeds higher than the maximum torque point and close to the synchronous speed (stable)</li></ul></p>
+<p>For classical application the functioning point has to be in the second region.</p>
+
+<h2><u>Open the demo</u></h2>
+<p><a href="05_characteristics_for_induction_machine.ame">$AME/demo/Libraries/EMD/05_characteristics_for_induction_machine.ame</a></p>
+
+<h2><u>Description</u></h2>
+<p>This demonstration example sketch is:</p>
+<p align="center"><img title="Circuit for induction machine" src="05_characteristics_for_induction_machine_fichiers/05_characteristics_for_induction_machine__circuit.png"></p>
+<p align="center"><b>Figure 2: Model to plot the induction machine characteristic</b></p>
+<p>The induction machine is powered with an equilibrated three phase system.
+In order to simulate batch runs varying the voltage source frequency and magnitude,
+we define the global parameters <i><b>"f"</b></i> and <i><b>"amp"</b></i>.<br>
+The induction motor uses default parameters and the input speed goes from 6000 rpm to -6000 rpm.</p>
+
+<h2><u>Simulation</u></h2>
+<h3>First single run simulation</h3>
+<p>The machine electromagnetic torque can be plotted as a function of the mechanical speed:</p>
+
+<p align="center"><img title="Electromagnetic torque as function of mechanical speed (rpm)" src="05_characteristics_for_induction_machine_fichiers/induction_machine_characteristic_page1.png"></p>
+<p align="center"><b>Figure 2: Torque as a function of the mechanical speed</b></p>
+<p>Note that the machine worked both as a generator and as a motor:
+as a motor on the upper right quadrant (speed between 0&nbsp;rpm and 3000&nbsp;rpm) and as a generator on the two other quadrants.</p>
+
+<h3>Then batch run on the frequency values</h3>
+
+   <table border="1" width="100%">
+     <tr>
+       <th>Parameter name</th>
+       <th><font size="-1">Unit</font></th>
+       <th><font size="-1">Value</font></th>
+       <th><font size="-1">Step size</font></th>
+       <th><font size="-1">Num below</font></th>
+       <th><font size="-1">Num above</font></th>
+     </tr>
+     <tr>
+       <td align="center">f</td>
+       <td align="center">Hz</td>
+       <td align="center">50</td>
+       <td align="center">10</td>
+       <td align="center">3</td>
+       <td align="center">3</td>
+     </tr>
+   </table>
+
+<p align="center"><b>Table 1: Batch parameter for frequency analysis</b></p>
+<p>The machine electromagnetic torque can be plotted as a function of the mechanical speed for the various frequencies:</p>
+<p align="center"><img title="Effect of frequency variation on induction machine" src="05_characteristics_for_induction_machine_fichiers/05_characteristics_for_induction_machine__graph_2.png"></p>
+<p align="center"><b>Figure 3: Frequency influence on the induction machine mechanical characteristic</b></p>
+<p>
+As the frequency increases:
+<ul>
+<li>
+the synchronous speed (mechanical speed for a null torque on the curves) increases.
+</li>
+<li>
+the magnetic torque produced by the machine decreases.
+</li>
+</ul>
+</p>
+
+<h3>Finally batch run on the voltage magnitude values</h3>
+
+   <table border="1" width="100%">
+     <tr>
+       <th>Parameter name</th>
+       <th><font size="-1">Unit</font></th>
+       <th><font size="-1">Value</font></th>
+       <th><font size="-1">Step size</font></th>
+       <th><font size="-1">Num below</font></th>
+       <th><font size="-1">Num above</font></th>
+     </tr>
+     <tr>
+       <td align="center">amp</td>
+       <td align="center">V</td>
+       <td align="center">230</td>
+       <td align="center">10</td>
+       <td align="center">3</td>
+       <td align="center">3</td>
+     </tr>
+   </table>
+   
+<p align="center"><b>Table 2: Batch parameter for voltage variation</b></p>
+
+<p>The machine electromagnetic torque can be plotted as a function of the mechanical speed for the various voltage magnitudes:</p>
+<p align="center"><img title="Mechanical characteristic with respect to voltage variation" src="05_characteristics_for_induction_machine_fichiers/05_characteristics_for_induction_machine__graph_3.png"></p>
+<p align="center"><b>Figure 4: Voltage magnitude influence on the induction machine mechanical characteristic</b></p>
+<p>
+As the voltage magnitude increases:
+<ul>
+<li>
+the synchronous speed does not change.
+</li>
+<li>
+the magnetic torque produced by the machine increases.
+</li>
+</ul>
+</p>
+<h2><u>Conclusion</u></h2>
+<p>The power supply frequency and voltage magnitude influence on the machine characteristics has been emphasized.
+Note that the stall and maximum torque are also function of the power supply voltage magnitude.<br>
+The demonstration example <a href="04_induction_machine.html">04_induction_machine.html</a> introduces the U/f control that uses these properties.</p>
+
+<hr style="border-width:0;">
+<div id="AMECopyright"></div>
+</body>
+</html>

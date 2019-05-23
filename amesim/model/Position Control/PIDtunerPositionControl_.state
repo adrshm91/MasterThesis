@@ -1,0 +1,9 @@
+EMDPMDC01 instance 1 armature winding input current [A] Data_Path=Ia@emd_DirectCurrentMachine_1
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports_2
+RSD00 instance 1 relative angular displacement [degree] Data_Path=are@rotaryspringdamper
+MECADS0B instance 1 angular displacement [degree] Data_Path=phi@anglesensor2
+SIGPIDT0 instance 1 integral part [] Data_Path=ipart@pidtune
+SIGPIDT0 instance 1 control error [] Data_Path=u0@pidtune
+SIGPIDT0 instance 2 integral part [] Data_Path=ipart@pidtune_1
+SIGPIDT0 instance 2 control error [] Data_Path=u0@pidtune_1

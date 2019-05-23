@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPS version="0.0">
+   <States>
+      <Property id="plantLinSettings" value="(dp1&#10;S'inputItem'&#10;p2&#10;I0&#10;sS'outputItem'&#10;p3&#10;I0&#10;sS'resItem'&#10;p4&#10;I0&#10;sS'tLinItem'&#10;p5&#10;I1&#10;s."/>
+      <Property id="tuningSettings" value="(dp1&#10;S'fPid'&#10;p2&#10;V13.7475&#10;p3&#10;s."/>
+      <Property id="_pContainerTopX" value="719"/>
+      <Property id="_pContainerTopY" value="61"/>
+      <Property id="modelFitSettings" value="(dp1&#10;S'modParam'&#10;p2&#10;cnumpy.core.multiarray&#10;_reconstruct&#10;p3&#10;(cnumpy.matrixlib.defmatrix&#10;matrix&#10;p4&#10;(I0&#10;tS'b'&#10;tRp5&#10;(I1&#10;(L6L&#10;L4L&#10;tcnumpy&#10;dtype&#10;p6&#10;(S'f8'&#10;I0&#10;I1&#10;tRp7&#10;(I3&#10;S'&lt;'&#10;NNNI-1&#10;I-1&#10;I0&#10;tbI00&#10;S'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf0?{\x14\xaeG\xe1z\x84?\x00\x00\x00\x00\x00\x00\x00@s\xd7\x12\xf2A\x0f1@\x00\x91~\xfb:\xd0)@yx\xcf\x81\xe5\x08\xd9?\x00\x00\x00\x00\x00\x00\x00@Dio\xf0\x85\t1@=\x9bU\x9f\xab\xfd0@\xf4\xfb\xfe\xcd\x8b\x13\xd2?\x00\x00\x00\x00\x00\x00\x00@s\xd7\x12\xf2A\x0f1@\x83QI\x9d\x80\xe6-@\xef\xe3h\x8e\xac\xfc\xd3?\x00\x00\x00\x00\x00\x00\x00@s\xd7\x12\xf2A\x0f1@q=\n\xd7\xa3\xb0{@\xef\xe3h\x8e\xac\xfc\xd3?\x00\x00\x00\x00\x00\x00\x00@s\xd7\x12\xf2A\x0f1@q=\n\xd7\xa3\xb0{@\xef\xe3h\x8e\xac\xfc\xd3?\x00\x00\x00\x00\x00\x00\x00@'&#10;tbsS'fitItem'&#10;p8&#10;I2&#10;s."/>
+      <Property id="optionsSettings" value="(dp1&#10;S'tolx'&#10;p2&#10;F0.0001&#10;sS'fmax'&#10;p3&#10;F1000&#10;sS'Ndiff'&#10;p4&#10;F100&#10;sS'fitTarget'&#10;p5&#10;I2&#10;sS'tuningMethod'&#10;p6&#10;I0&#10;sS'fmin'&#10;p7&#10;F1&#10;sS'maxIter'&#10;p8&#10;F1000&#10;sS'tfinal'&#10;p9&#10;F0.20000000000000001&#10;s."/>
+      <Property id="_pContainerHeight" value="764"/>
+      <Property id="_pContainerWidth" value="1051"/>
+   </States>
+</APPS>

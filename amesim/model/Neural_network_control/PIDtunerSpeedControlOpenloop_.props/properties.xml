@@ -1,0 +1,14 @@
+<properties xmlns="amesim-property-instances" version="1">
+ <property name="@special:model_history" id="id0" target="model:">
+  <struct/>
+ </property>
+ <property name="@special:prepost_tools_document_plots" id="id1" target="model:">
+  <struct/>
+ </property>
+ <property name="@special:prepost_tools_document_animations" id="id2" target="model:">
+  <struct/>
+ </property>
+ <property name="@special:prepost_tools_document_dashboards" id="id3" target="model:">
+  <struct/>
+ </property>
+</properties>

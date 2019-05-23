@@ -1,0 +1,149 @@
+<properties xmlns="amesim-property-instances" version="1">
+ <property sticker="" id="id0" name="@special:model_history" target="model:">
+  <struct/>
+ </property>
+ <property sticker="" id="id4" name="@special:prepost_tools_element_apps" target="aliaspath:pidtune">
+  <struct>
+   <attribute name="handle_1c69">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">pid tuner</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp ${library_node}/utils/SIG_PID_tuning_app/PID_tuner_060.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_94656</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">df2aafe01576270b1fa4145c108220168e7e9104</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">0</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property sticker="" id="id5" name="@special:prepost_tools_element_apps" target="aliaspath:pidtune_1">
+  <struct>
+   <attribute name="handle_594c">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">pid tuner</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp ${library_node}/utils/SIG_PID_tuning_app/SIG_PID_tuning.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_m12880</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">df2aafe01576270b1fa4145c108220168e7e9104</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">0</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
+  <struct>
+   <attribute name="plot_33a4">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">target profile</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_target_profile.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+   <attribute name="plot_161d">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">position tracking</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_position_tracking.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+   <attribute name="plot_5ebb">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">control</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_control.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+   <attribute name="plot_4a74">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">speed tracking</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_speed_tracking.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id2" name="@special:prepost_tools_document_animations" target="model:">
+  <struct/>
+ </property>
+ <property id="id3" name="@special:prepost_tools_document_dashboards" target="model:">
+  <struct/>
+ </property>
+</properties>

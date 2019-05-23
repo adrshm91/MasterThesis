@@ -1,0 +1,27 @@
+#############################################################
+#                                                           #
+#  This is a configuration file for sensitivity analysis    #
+#                                                           #
+#############################################################
+DTYPE=set
+NPARS=0
+NSETS=5
+
+PIDNO=
+
+PDATA=
+
+PDATA=
+
+PDATA=
+
+PDATA=
+
+PDATA=
+
+VALRU=
+1
+1
+1
+1
+1

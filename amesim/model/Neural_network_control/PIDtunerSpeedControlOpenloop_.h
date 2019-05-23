@@ -1,0 +1,4 @@
+#ifndef __PIDtunerSpeedControlOpenloop_H__
+#define __PIDtunerSpeedControlOpenloop_H__
+#define STANDALONESIMULATOR
+#endif

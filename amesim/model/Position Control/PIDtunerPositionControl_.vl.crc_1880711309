@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE VL>
+<VL checksum="1880711309" VersionId="2019.1.0 - 81842-80938 2019" DOC_VERSION="1">
+ <VARS_LIST>
+  <VAR VARNUM="1" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="duplicate of torque at port 1" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2740" Data_Path="torqstat@emd_DirectCurrentMachine_1" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="2" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular speed (always zero)" Submodel_Name="W000" CIRCUIT_SCOPE_ID="2711" VAR_HASSTART_VALUE="1" Data_Path="wzero@zeroomegasource_1" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="2" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="stator speed at port 5" Submodel_Name="EMDPMDC01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2741" Data_Path="wstat@emd_DirectCurrentMachine_1" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="3" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="fixed angle" Submodel_Name="W000" CIRCUIT_SCOPE_ID="2712" VAR_HASSTART_VALUE="1" Data_Path="theta@zeroomegasource_1" UNITS="degree" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="4" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="heat flow rate at port 4" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2738" Data_Path="dh@emd_DirectCurrentMachine_1" UNITS="W" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="5" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="temperature at port 1" Submodel_Name="THTS1" CIRCUIT_SCOPE_ID="2710" VAR_HASSTART_VALUE="1" Data_Path="t1@th_temperature_source_1" UNITS="degC" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="5" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="temperature at port 4" Submodel_Name="EMDPMDC01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2739" Data_Path="Temp@emd_DirectCurrentMachine_1" UNITS="degC" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2736" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="7" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="zero volt voltage" Submodel_Name="EBZV01" CIRCUIT_SCOPE_ID="2788" VAR_HASSTART_VALUE="1" Data_Path="V1@potential_reference_2" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="7" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="potential at port 3" Submodel_Name="EMDPMDC01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2737" Data_Path="V3@emd_DirectCurrentMachine_1" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="8" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="velocity at port 1" Submodel_Name="RN001" CIRCUIT_SCOPE_ID="2753" Data_Path="w1@reducer" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="8" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotor speed at port 1" Submodel_Name="EMDPMDC01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2733" Data_Path="wrot@emd_DirectCurrentMachine_1" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="9" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2732" Data_Path="torqrot@emd_DirectCurrentMachine_1" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="9" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="RN001" VAR_DIM="1" CIRCUIT_SCOPE_ID="2754" Data_Path="t1@reducer" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="10" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="potential at port 2" Submodel_Name="EBVS01" CIRCUIT_SCOPE_ID="2679" Data_Path="V2@controlled_voltagesource" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="10" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="potential at port 2" Submodel_Name="EMDPMDC01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2735" Data_Path="V2@emd_DirectCurrentMachine_1" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="11" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="current at port 2" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2734" Data_Path="I2@emd_DirectCurrentMachine_1" UNITS="A" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="11" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="current at port 2" Submodel_Name="EBVS01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2680" Data_Path="I2@controlled_voltagesource" UNITS="A" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="12" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="armature winding input voltage" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2719" Data_Path="Ua@emd_DirectCurrentMachine_1" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="13" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="armature winding input current" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2720" VAR_HASSTART_VALUE="1" Data_Path="Ia@emd_DirectCurrentMachine_1" UNITS="A" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="14" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotor relative speed" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2721" Data_Path="wdif@emd_DirectCurrentMachine_1" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="15" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="electromagnetic torque" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2722" Data_Path="Tem@emd_DirectCurrentMachine_1" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="16" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="electromotive force" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2723" Data_Path="bemf@emd_DirectCurrentMachine_1" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="17" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="armature winding resistance" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2724" Data_Path="Ra@emd_DirectCurrentMachine_1" UNITS="Ohm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="18" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="electromotive force and torque coefficient" Submodel_Name="EMDPMDC01" CIRCUIT_SCOPE_ID="2725" Data_Path="Kt@emd_DirectCurrentMachine_1" UNITS="V*s/rad" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2727" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="2730" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="21" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="zero volt voltage" Submodel_Name="EBZV01" CIRCUIT_SCOPE_ID="2785" VAR_HASSTART_VALUE="1" Data_Path="V1@potential_reference_3" UNITS="V" Submodel_Instance="2" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="21" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="potential at port 1" Submodel_Name="EBVS01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2678" Data_Path="V1@controlled_voltagesource" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="22" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="duplicate of current at port 2" Submodel_Name="EBVS01" CIRCUIT_SCOPE_ID="2677" Data_Path="I1@controlled_voltagesource" UNITS="A" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="23" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="pid output at port 2" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2818" Data_Path="v@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="23" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="input voltage signal" Submodel_Name="EBVS01" VAR_DIM="1" CIRCUIT_SCOPE_ID="2681" Data_Path="S3@controlled_voltagesource" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="24" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="output voltage" Submodel_Name="EBVS01" CIRCUIT_SCOPE_ID="2675" Data_Path="U@controlled_voltagesource" UNITS="V" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="25" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="output current" Submodel_Name="EBVS01" CIRCUIT_SCOPE_ID="2676" Data_Path="I@controlled_voltagesource" UNITS="A" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="26" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="sign reversed duplicate of shaft speed at port 2" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2834" Data_Path="wdup@rotaryload2ports" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="26" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="velocity at port 2" Submodel_Name="RN001" VAR_DIM="1" CIRCUIT_SCOPE_ID="2756" Data_Path="w2@reducer" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="27" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 2" Submodel_Name="RN001" CIRCUIT_SCOPE_ID="2755" Data_Path="t2@reducer" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="27" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="MECRL0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2835" Data_Path="torq1@rotaryload2ports" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="28" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="RSD00" CIRCUIT_SCOPE_ID="2670" Data_Path="to1@rotaryspringdamper" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="28" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 2" Submodel_Name="MECRL0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2837" Data_Path="torq2@rotaryload2ports" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="29" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="shaft speed at port 2" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2836" VAR_HASSTART_VALUE="1" Data_Path="w@rotaryload2ports" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="29" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotary velocity at port 1" Submodel_Name="RSD00" VAR_DIM="1" CIRCUIT_SCOPE_ID="2671" Data_Path="w1@rotaryspringdamper" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="30" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotary acceleration" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2826" Data_Path="accel@rotaryload2ports" UNITS="rad/s/s" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="31" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="viscous friction torque" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2827" Data_Path="Tvisc@rotaryload2ports" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2829" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="2832" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="34" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="duplicate of torque at port 1" Submodel_Name="RSD00" CIRCUIT_SCOPE_ID="2672" Data_Path="t2@rotaryspringdamper" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="34" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="MECRL0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2780" Data_Path="torq1@rotaryload2ports_2" UNITS="Nm" Submodel_Instance="2" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="35" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="sign reversed duplicate of shaft speed at port 2" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2779" Data_Path="wdup@rotaryload2ports_2" UNITS="rev/min" Submodel_Instance="2" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="35" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotary velocity at port 2" Submodel_Name="RSD00" VAR_DIM="1" CIRCUIT_SCOPE_ID="2673" Data_Path="w2@rotaryspringdamper" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="36" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="MECRSS0B" CIRCUIT_SCOPE_ID="2747" Data_Path="tordup@closedLoopSpeed" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="36" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 2" Submodel_Name="MECRL0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2782" Data_Path="torq2@rotaryload2ports_2" UNITS="Nm" Submodel_Instance="2" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="37" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="shaft speed at port 2" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2781" VAR_HASSTART_VALUE="1" Data_Path="w@rotaryload2ports_2" UNITS="rev/min" Submodel_Instance="2" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="37" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular velocity at port 1" Submodel_Name="MECRSS0B" VAR_DIM="1" CIRCUIT_SCOPE_ID="2748" Data_Path="w@closedLoopSpeed" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="38" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="rotary acceleration" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2771" Data_Path="accel@rotaryload2ports_2" UNITS="rad/s/s" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="39" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="viscous friction torque" Submodel_Name="MECRL0" CIRCUIT_SCOPE_ID="2772" Data_Path="Tvisc@rotaryload2ports_2" UNITS="Nm" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2774" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="2777" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="42" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="relative angular displacement" Submodel_Name="RSD00" CIRCUIT_SCOPE_ID="2661" VAR_HASSTART_VALUE="1" Data_Path="are@rotaryspringdamper" UNITS="degree" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2663" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="2666" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="45" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="spring torque" Submodel_Name="RSD00" CIRCUIT_SCOPE_ID="2668" Data_Path="tspring@rotaryspringdamper" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="46" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="damper torque" Submodel_Name="RSD00" CIRCUIT_SCOPE_ID="2669" Data_Path="tdamper@rotaryspringdamper" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="47" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="user defined duty cycle output" Submodel_Name="UD00" CIRCUIT_SCOPE_ID="2621" Data_Path="output@piecewiselinear_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="47" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="signal input" Submodel_Name="TORQC" VAR_DIM="1" CIRCUIT_SCOPE_ID="2786" Data_Path="input@torquecon_1" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="48" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular velocity at port 3" Submodel_Name="MECADS0B" CIRCUIT_SCOPE_ID="2764" Data_Path="wdup@anglesensor2" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="49" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque output" Submodel_Name="TORQC" CIRCUIT_SCOPE_ID="2787" Data_Path="torque@torquecon_1" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="49" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 3" Submodel_Name="MECADS0B" VAR_DIM="1" CIRCUIT_SCOPE_ID="2765" Data_Path="torque@anglesensor2" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="50" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="signal output" Submodel_Name="MECRSS0B" CIRCUIT_SCOPE_ID="2749" Data_Path="wsig@closedLoopSpeed" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="50" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="plant value at port 1" Submodel_Name="SIGPIDT0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2817" Data_Path="y@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="51" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 1" Submodel_Name="MECADS0B" CIRCUIT_SCOPE_ID="2761" Data_Path="tordup@anglesensor2" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="51" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="torque at port 3" Submodel_Name="MECRSS0B" VAR_DIM="1" CIRCUIT_SCOPE_ID="2751" Data_Path="torque@closedLoopSpeed" UNITS="Nm" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="52" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular velocity at port 3" Submodel_Name="MECRSS0B" CIRCUIT_SCOPE_ID="2750" Data_Path="wdup@closedLoopSpeed" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="52" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular velocity at port 1" Submodel_Name="MECADS0B" VAR_DIM="1" CIRCUIT_SCOPE_ID="2762" Data_Path="w@anglesensor2" UNITS="rev/min" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="53" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="signal output" Submodel_Name="MECADS0B" CIRCUIT_SCOPE_ID="2763" Data_Path="theta@anglesensor2" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="53" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="plant value at port 1" Submodel_Name="SIGPIDT0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2655" Data_Path="y@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="54" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="angular displacement" Submodel_Name="MECADS0B" CIRCUIT_SCOPE_ID="2760" VAR_HASSTART_VALUE="1" Data_Path="phi@anglesensor2" UNITS="degree" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="55" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="function of input x" Submodel_Name="FX00" CIRCUIT_SCOPE_ID="2625" Data_Path="fofx@fofx_2" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="55" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control setpoint at port 3" Submodel_Name="SIGPIDT0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2657" Data_Path="cmd@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="56" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="user defined duty cycle output" Submodel_Name="UD00" CIRCUIT_SCOPE_ID="2709" Data_Path="output@piecewiselinear" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="56" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="input to f(x)" Submodel_Name="FX00" VAR_DIM="1" CIRCUIT_SCOPE_ID="2626" Data_Path="x@fofx_2" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="57" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="pid output at port 2" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2656" Data_Path="v@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1">
+   <TIE_VAR VARNUM="57" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control setpoint at port 3" Submodel_Name="SIGPIDT0" VAR_DIM="1" CIRCUIT_SCOPE_ID="2819" Data_Path="cmd@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  </VAR>
+  <VAR VARNUM="58" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="proportional part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2801" Data_Path="ppart@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="59" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="integral part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2802" VAR_HASSTART_VALUE="1" Data_Path="ipart@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="60" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="derivative part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2803" Data_Path="dpart@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="61" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control error (= setpoint - actual)" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2804" Data_Path="u@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="62" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control error derivative" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2805" Data_Path="du@pidtune" UNITS="1/s" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2806" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="64" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="limit output - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2807" VAR_HASSTART_VALUE="1" Data_Path="outlim0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="65" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="anti windup method - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2808" VAR_HASSTART_VALUE="1" Data_Path="antiwind0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="66" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="proportional gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2809" VAR_HASSTART_VALUE="1" Data_Path="Kp0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="67" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="integral gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2810" VAR_HASSTART_VALUE="1" Data_Path="Ki0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="68" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="derivative gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2811" VAR_HASSTART_VALUE="1" Data_Path="Kd0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="69" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="time constant for first order lag used to estimate derivative - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2812" VAR_HASSTART_VALUE="1" Data_Path="tau0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="70" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="minimum permitted output value - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2813" VAR_HASSTART_VALUE="1" Data_Path="outmin0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="71" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="maximum permitted output value - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2814" VAR_HASSTART_VALUE="1" Data_Path="outmax0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="72" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="backtracking gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2815" VAR_HASSTART_VALUE="1" Data_Path="Ks0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="73" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="hysteresis - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2816" VAR_HASSTART_VALUE="1" Data_Path="hyst0GEN@pidtune" UNITS="null" Submodel_Instance="1" SAVE_VALUE="1"/>
+  <VAR VARNUM="74" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="proportional part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2639" Data_Path="ppart@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="75" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="integral part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2640" VAR_HASSTART_VALUE="1" Data_Path="ipart@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="76" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="derivative part" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2641" Data_Path="dpart@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="77" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control error (= setpoint - actual)" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2642" Data_Path="u@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="78" IS_DELTA="0" IS_LINKED_VARIABLE="0" TITLE="control error derivative" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2643" Data_Path="du@pidtune_1" UNITS="1/s" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2644" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR VARNUM="80" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="limit output - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2645" VAR_HASSTART_VALUE="1" Data_Path="outlim0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="81" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="anti windup method - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2646" VAR_HASSTART_VALUE="1" Data_Path="antiwind0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="82" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="proportional gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2647" VAR_HASSTART_VALUE="1" Data_Path="Kp0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="83" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="integral gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2648" VAR_HASSTART_VALUE="1" Data_Path="Ki0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="84" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="derivative gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2649" VAR_HASSTART_VALUE="1" Data_Path="Kd0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="85" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="time constant for first order lag used to estimate derivative - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2650" VAR_HASSTART_VALUE="1" Data_Path="tau0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="86" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="minimum permitted output value - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2651" VAR_HASSTART_VALUE="1" Data_Path="outmin0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="87" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="maximum permitted output value - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2652" VAR_HASSTART_VALUE="1" Data_Path="outmax0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="88" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="backtracking gain - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2653" VAR_HASSTART_VALUE="1" Data_Path="Ks0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+  <VAR VARNUM="89" IS_DELTA="0" IS_LINKED_VARIABLE="1" TITLE="hysteresis - Linked variable" Submodel_Name="SIGPIDT0" CIRCUIT_SCOPE_ID="2654" VAR_HASSTART_VALUE="1" Data_Path="hyst0GEN@pidtune_1" UNITS="null" Submodel_Instance="2" SAVE_VALUE="1"/>
+ </VARS_LIST>
+</VL>

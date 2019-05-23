@@ -1,0 +1,89 @@
+1 EMDPMDC01 instance 1 duplicate of torque at port 1 [Nm] Param_Id=2740 Data_Path=torqstat@emd_DirectCurrentMachine_1
+1 W000 instance 1 angular speed (always zero) [rev/min] Param_Id=2711 Data_Path=wzero@zeroomegasource_1
+1 W000 instance 1 fixed angle [degree] Param_Id=2712 Data_Path=theta@zeroomegasource_1
+1 EMDPMDC01 instance 1 heat flow rate at port 4 [W] Param_Id=2738 Data_Path=dh@emd_DirectCurrentMachine_1
+1 THTS1 instance 1 temperature at port 1 [degC] Param_Id=2710 Data_Path=t1@th_temperature_source_1
+1 HIDDEN Param_Id=2736
+1 EBZV01 instance 1 zero volt voltage [V] Param_Id=2788 Data_Path=V1@potential_reference_2
+1 RN001 instance 1 velocity at port 1 [rev/min] Param_Id=2753 Data_Path=w1@reducer
+1 EMDPMDC01 instance 1 torque at port 1 [Nm] Param_Id=2732 Data_Path=torqrot@emd_DirectCurrentMachine_1
+1 EBVS01 instance 1 potential at port 2 [V] Param_Id=2679 Data_Path=V2@controlled_voltagesource
+1 EMDPMDC01 instance 1 current at port 2 [A] Param_Id=2734 Data_Path=I2@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 armature winding input voltage [V] Param_Id=2719 Data_Path=Ua@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 armature winding input current [A] Param_Id=2720 Data_Path=Ia@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 rotor relative speed [rev/min] Param_Id=2721 Data_Path=wdif@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 electromagnetic torque [Nm] Param_Id=2722 Data_Path=Tem@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 electromotive force [V] Param_Id=2723 Data_Path=bemf@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 armature winding resistance [Ohm] Param_Id=2724 Data_Path=Ra@emd_DirectCurrentMachine_1
+1 EMDPMDC01 instance 1 electromotive force and torque coefficient [V*s/rad] Param_Id=2725 Data_Path=Kt@emd_DirectCurrentMachine_1
+0 HIDDEN Param_Id=2727
+0 HIDDEN Param_Id=2730
+1 EBZV01 instance 2 zero volt voltage [V] Param_Id=2785 Data_Path=V1@potential_reference_3
+1 EBVS01 instance 1 duplicate of current at port 2 [A] Param_Id=2677 Data_Path=I1@controlled_voltagesource
+1 SIGPIDT0 instance 1 pid output at port 2 Param_Id=2818 Data_Path=v@pidtune
+1 EBVS01 instance 1 output voltage [V] Param_Id=2675 Data_Path=U@controlled_voltagesource
+1 EBVS01 instance 1 output current [A] Param_Id=2676 Data_Path=I@controlled_voltagesource
+1 MECRL0 instance 1 sign reversed duplicate of shaft speed at port 2 [rev/min] Param_Id=2834 Data_Path=wdup@rotaryload2ports
+1 RN001 instance 1 torque at port 2 [Nm] Param_Id=2755 Data_Path=t2@reducer
+1 RSD00 instance 1 torque at port 1 [Nm] Param_Id=2670 Data_Path=to1@rotaryspringdamper
+1 MECRL0 instance 1 shaft speed at port 2 [rev/min] Param_Id=2836 Data_Path=w@rotaryload2ports
+1 MECRL0 instance 1 rotary acceleration [rad/s/s] Param_Id=2826 Data_Path=accel@rotaryload2ports
+1 MECRL0 instance 1 viscous friction torque [Nm] Param_Id=2827 Data_Path=Tvisc@rotaryload2ports
+0 HIDDEN Param_Id=2829
+0 HIDDEN Param_Id=2832
+1 RSD00 instance 1 duplicate of torque at port 1 [Nm] Param_Id=2672 Data_Path=t2@rotaryspringdamper
+1 MECRL0 instance 2 sign reversed duplicate of shaft speed at port 2 [rev/min] Param_Id=2779 Data_Path=wdup@rotaryload2ports_2
+1 MECRSS0B instance 1 torque at port 1 [Nm] Param_Id=2747 Data_Path=tordup@closedLoopSpeed
+1 MECRL0 instance 2 shaft speed at port 2 [rev/min] Param_Id=2781 Data_Path=w@rotaryload2ports_2
+1 MECRL0 instance 2 rotary acceleration [rad/s/s] Param_Id=2771 Data_Path=accel@rotaryload2ports_2
+1 MECRL0 instance 2 viscous friction torque [Nm] Param_Id=2772 Data_Path=Tvisc@rotaryload2ports_2
+0 HIDDEN Param_Id=2774
+0 HIDDEN Param_Id=2777
+1 RSD00 instance 1 relative angular displacement [degree] Param_Id=2661 Data_Path=are@rotaryspringdamper
+0 HIDDEN Param_Id=2663
+0 HIDDEN Param_Id=2666
+1 RSD00 instance 1 spring torque [Nm] Param_Id=2668 Data_Path=tspring@rotaryspringdamper
+1 RSD00 instance 1 damper torque [Nm] Param_Id=2669 Data_Path=tdamper@rotaryspringdamper
+1 UD00 instance 2 user defined duty cycle output Param_Id=2621 Data_Path=output@piecewiselinear_1
+1 MECADS0B instance 1 angular velocity at port 3 [rev/min] Param_Id=2764 Data_Path=wdup@anglesensor2
+1 TORQC instance 1 torque output [Nm] Param_Id=2787 Data_Path=torque@torquecon_1
+1 MECRSS0B instance 1 signal output Param_Id=2749 Data_Path=wsig@closedLoopSpeed
+1 MECADS0B instance 1 torque at port 1 [Nm] Param_Id=2761 Data_Path=tordup@anglesensor2
+1 MECRSS0B instance 1 angular velocity at port 3 [rev/min] Param_Id=2750 Data_Path=wdup@closedLoopSpeed
+1 MECADS0B instance 1 signal output Param_Id=2763 Data_Path=theta@anglesensor2
+1 MECADS0B instance 1 angular displacement [degree] Param_Id=2760 Data_Path=phi@anglesensor2
+1 FX00 instance 1 function of input x Param_Id=2625 Data_Path=fofx@fofx_2
+1 UD00 instance 1 user defined duty cycle output Param_Id=2709 Data_Path=output@piecewiselinear
+1 SIGPIDT0 instance 2 pid output at port 2 Param_Id=2656 Data_Path=v@pidtune_1
+1 SIGPIDT0 instance 1 proportional part Param_Id=2801 Data_Path=ppart@pidtune
+1 SIGPIDT0 instance 1 integral part Param_Id=2802 Data_Path=ipart@pidtune
+1 SIGPIDT0 instance 1 derivative part Param_Id=2803 Data_Path=dpart@pidtune
+1 SIGPIDT0 instance 1 control error (= setpoint - actual) Param_Id=2804 Data_Path=u@pidtune
+1 SIGPIDT0 instance 1 control error derivative [1/s] Param_Id=2805 Data_Path=du@pidtune
+0 HIDDEN Param_Id=2806
+1 SIGPIDT0 instance 1 limit output - Linked variable Param_Id=2807 Is_Linked_Variable=1 Data_Path=outlim0GEN@pidtune
+1 SIGPIDT0 instance 1 anti windup method - Linked variable Param_Id=2808 Is_Linked_Variable=1 Data_Path=antiwind0GEN@pidtune
+1 SIGPIDT0 instance 1 proportional gain - Linked variable Param_Id=2809 Is_Linked_Variable=1 Data_Path=Kp0GEN@pidtune
+1 SIGPIDT0 instance 1 integral gain - Linked variable Param_Id=2810 Is_Linked_Variable=1 Data_Path=Ki0GEN@pidtune
+1 SIGPIDT0 instance 1 derivative gain - Linked variable Param_Id=2811 Is_Linked_Variable=1 Data_Path=Kd0GEN@pidtune
+1 SIGPIDT0 instance 1 time constant for first order lag used to estimate derivative - Linked variable Param_Id=2812 Is_Linked_Variable=1 Data_Path=tau0GEN@pidtune
+1 SIGPIDT0 instance 1 minimum permitted output value - Linked variable Param_Id=2813 Is_Linked_Variable=1 Data_Path=outmin0GEN@pidtune
+1 SIGPIDT0 instance 1 maximum permitted output value - Linked variable Param_Id=2814 Is_Linked_Variable=1 Data_Path=outmax0GEN@pidtune
+1 SIGPIDT0 instance 1 backtracking gain - Linked variable Param_Id=2815 Is_Linked_Variable=1 Data_Path=Ks0GEN@pidtune
+1 SIGPIDT0 instance 1 hysteresis - Linked variable Param_Id=2816 Is_Linked_Variable=1 Data_Path=hyst0GEN@pidtune
+1 SIGPIDT0 instance 2 proportional part Param_Id=2639 Data_Path=ppart@pidtune_1
+1 SIGPIDT0 instance 2 integral part Param_Id=2640 Data_Path=ipart@pidtune_1
+1 SIGPIDT0 instance 2 derivative part Param_Id=2641 Data_Path=dpart@pidtune_1
+1 SIGPIDT0 instance 2 control error (= setpoint - actual) Param_Id=2642 Data_Path=u@pidtune_1
+1 SIGPIDT0 instance 2 control error derivative [1/s] Param_Id=2643 Data_Path=du@pidtune_1
+0 HIDDEN Param_Id=2644
+1 SIGPIDT0 instance 2 limit output - Linked variable Param_Id=2645 Is_Linked_Variable=1 Data_Path=outlim0GEN@pidtune_1
+1 SIGPIDT0 instance 2 anti windup method - Linked variable Param_Id=2646 Is_Linked_Variable=1 Data_Path=antiwind0GEN@pidtune_1
+1 SIGPIDT0 instance 2 proportional gain - Linked variable Param_Id=2647 Is_Linked_Variable=1 Data_Path=Kp0GEN@pidtune_1
+1 SIGPIDT0 instance 2 integral gain - Linked variable Param_Id=2648 Is_Linked_Variable=1 Data_Path=Ki0GEN@pidtune_1
+1 SIGPIDT0 instance 2 derivative gain - Linked variable Param_Id=2649 Is_Linked_Variable=1 Data_Path=Kd0GEN@pidtune_1
+1 SIGPIDT0 instance 2 time constant for first order lag used to estimate derivative - Linked variable Param_Id=2650 Is_Linked_Variable=1 Data_Path=tau0GEN@pidtune_1
+1 SIGPIDT0 instance 2 minimum permitted output value - Linked variable Param_Id=2651 Is_Linked_Variable=1 Data_Path=outmin0GEN@pidtune_1
+1 SIGPIDT0 instance 2 maximum permitted output value - Linked variable Param_Id=2652 Is_Linked_Variable=1 Data_Path=outmax0GEN@pidtune_1
+1 SIGPIDT0 instance 2 backtracking gain - Linked variable Param_Id=2653 Is_Linked_Variable=1 Data_Path=Ks0GEN@pidtune_1
+1 SIGPIDT0 instance 2 hysteresis - Linked variable Param_Id=2654 Is_Linked_Variable=1 Data_Path=hyst0GEN@pidtune_1

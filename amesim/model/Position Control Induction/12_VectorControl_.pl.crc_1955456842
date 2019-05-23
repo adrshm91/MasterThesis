@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE PL>
+<PL DOC_VERSION="1" checksum="1955456842" VersionId="2019.1.0 - 81842-80938 2019">
+ <PARAMS_LIST>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="1" LINKED_VARIABLE="k0GEN@constant" Param_Id="8562" TITLE="constant value" VALUE="Udc" TUNABLE="true" Data_Path="k@constant"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBZV01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8561" TITLE="zero volt voltage" VALUE="0.00000000000000e+000" Data_Path="V1@potential_reference"/>
+  <PARAMETER UNITS="Nm/(rev/min)" Submodel_Name="RDAM00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8913" TITLE="damper rating" VALUE="mFvisc" TUNABLE="false" Data_Path="cdamp@rotarydamper"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="1" Param_Id="8914" TITLE="computation type" VALUE="1" TUNABLE="false" Data_Path="damprating@rotarydamper"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="1" Param_Id="8915" TITLE="discontinuity handling" VALUE="2" TUNABLE="false" Data_Path="disc@rotarydamper"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="1" Param_Id="8916" TITLE=" filename for data table R (Nm/(rev/min)) in terms of w (rev/min)" VALUE="vardamp.dat" TUNABLE="false" Data_Path="text1@rotarydamper"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="1" Param_Id="8917" TITLE=" filename for data table T (Nm) in terms of w (rev/min)" VALUE="vartorq.dat" TUNABLE="false" Data_Path="text2@rotarydamper"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8571" TITLE="angular speed (always zero)" VALUE="0.00000000000000e+000" Data_Path="wzero@zeroomegasource"/>
+  <PARAMETER UNITS="degree" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8572" TITLE="fixed angle" VALUE="0.00000000000000e+000" Data_Path="theta@zeroomegasource"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="8569" TITLE="angular speed (always zero)" VALUE="0.00000000000000e+000" Data_Path="wzero@zeroomegasource_2"/>
+  <PARAMETER UNITS="degree" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="8570" TITLE="fixed angle" VALUE="0.00000000000000e+000" Data_Path="theta@zeroomegasource_2"/>
+  <PARAMETER UNITS="degC" Submodel_Name="THTS1" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8930" TITLE="temperature at port 1" VALUE="2.00000000000000e+001" Data_Path="t1@th_temperature_source"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8597" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer_2"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8594" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer_2"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8595" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer_2"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="1" Param_Id="8596" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer_2"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="8897" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer_3"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="2" Param_Id="8894" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer_3"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="2" Param_Id="8895" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer_3"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="2" Param_Id="8896" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer_3"/>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="2" LINKED_VARIABLE="k0GEN@constant_2" Param_Id="8831" TITLE="constant value" VALUE="15" TUNABLE="true" Data_Path="k@constant_2"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8782" TITLE="current at port 1" VALUE="0.00000000000000e+000" Data_Path="I1@voltmeter"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8785" TITLE="current at port 3" VALUE="0.00000000000000e+000" Data_Path="I3@voltmeter"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8781" TITLE="output current" VALUE="0.00000000000000e+000" Data_Path="I@voltmeter"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8777" TITLE="offset to be subtracted from voltage" VALUE="0" TUNABLE="false" Data_Path="offset@voltmeter"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8778" TITLE="gain for voltage measure" VALUE="1" TUNABLE="false" Data_Path="gain@voltmeter"/>
+  <PARAMETER Submodel_Name="EBVT01" Submodel_Instance="1" Param_Id="8779" TITLE="sign convention: positive pin" VALUE="1" TUNABLE="false" Data_Path="conv@voltmeter"/>
+  <PARAMETER UNITS="degC" Submodel_Name="THTS1" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="8912" TITLE="temperature at port 1" VALUE="2.00000000000000e+001" Data_Path="t1@th_temperature_source_2"/>
+  <PARAMETER UNITS="null" Submodel_Name="GA00" IS_DELTA="false" Submodel_Instance="1" LINKED_VARIABLE="k0GEN@elect01_3" Param_Id="8926" TITLE="value of gain" VALUE="1/sqrt(8)" TUNABLE="true" Data_Path="k@elect01_3"/>
+  <PARAMETER UNITS="null" Submodel_Name="GA00" IS_DELTA="false" Submodel_Instance="2" LINKED_VARIABLE="k0GEN@elect01" Param_Id="8565" TITLE="value of gain" VALUE="0.95" TUNABLE="true" Data_Path="k@elect01"/>
+  <PARAMETER UNITS="null" Submodel_Name="INT0" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8694" TITLE="output from integrator" VALUE="0.00000000000000e+000" Data_Path="output@elect02"/>
+  <PARAMETER UNITS="null" Submodel_Name="INT0" IS_DELTA="false" Submodel_Instance="1" LINKED_VARIABLE="k0GEN@elect02" Param_Id="8686" TITLE="value of gain" VALUE="p*pi/30" TUNABLE="true" Data_Path="k@elect02"/>
+  <PARAMETER UNITS="null" Submodel_Name="INT0" IS_DELTA="false" Submodel_Instance="1" LINKED_VARIABLE="smax0GEN@elect02" Param_Id="8687" TITLE="maximum permitted output value" VALUE="10" TUNABLE="true" Data_Path="smax@elect02"/>
+  <PARAMETER UNITS="null" Submodel_Name="INT0" IS_DELTA="false" Submodel_Instance="1" LINKED_VARIABLE="smin0GEN@elect02" Param_Id="8688" TITLE="minimum permitted output value" VALUE="-10" TUNABLE="true" Data_Path="smin@elect02"/>
+  <PARAMETER Submodel_Name="INT0" Submodel_Instance="1" LINKED_VARIABLE="outlim0GEN@elect02" Param_Id="8689" TITLE="limit output" VALUE="1" TUNABLE="true" Data_Path="outlim@elect02"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8613" TITLE="time at which duty cycle starts" VALUE="0" TUNABLE="false" Data_Path="tstart@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8614" TITLE="output at start of stage 1" VALUE="1" TUNABLE="false" Data_Path="start1@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8615" TITLE="output at end of stage 1" VALUE="1" TUNABLE="false" Data_Path="end1@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8616" TITLE="duration of stage 1" VALUE="0.2" TUNABLE="false" Data_Path="t1@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8617" TITLE="output at start of stage 2" VALUE="1" TUNABLE="false" Data_Path="start2@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8618" TITLE="output at end of stage 2" VALUE="w" TUNABLE="false" Data_Path="end2@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8619" TITLE="duration of stage 2" VALUE="10" TUNABLE="false" Data_Path="t2@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8620" TITLE="output at start of stage 3" VALUE="w" TUNABLE="false" Data_Path="start3@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8621" TITLE="output at end of stage 3" VALUE="w" TUNABLE="false" Data_Path="end3@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8622" TITLE="duration of stage 3" VALUE="1000000" TUNABLE="false" Data_Path="t3@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8623" TITLE="output at start of stage 4" VALUE="31000" TUNABLE="false" Data_Path="start4@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8624" TITLE="output at end of stage 4" VALUE="31000" TUNABLE="false" Data_Path="end4@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8625" TITLE="duration of stage 4" VALUE="1000000" TUNABLE="false" Data_Path="t4@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8626" TITLE="output at start of stage 5" VALUE="0" TUNABLE="false" Data_Path="start5@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8627" TITLE="output at end of stage 5" VALUE="0" TUNABLE="false" Data_Path="end5@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8628" TITLE="duration of stage 5" VALUE="1000000" TUNABLE="false" Data_Path="t5@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8629" TITLE="output at start of stage 6" VALUE="0" TUNABLE="false" Data_Path="start6@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8630" TITLE="output at end of stage 6" VALUE="0" TUNABLE="false" Data_Path="end6@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8631" TITLE="duration of stage 6" VALUE="1000000" TUNABLE="false" Data_Path="t6@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8632" TITLE="output at start of stage 7" VALUE="0" TUNABLE="false" Data_Path="start7@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8633" TITLE="output at end of stage 7" VALUE="0" TUNABLE="false" Data_Path="end7@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8634" TITLE="duration of stage 7" VALUE="1000000" TUNABLE="false" Data_Path="t7@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8635" TITLE="output at start of stage 8" VALUE="0" TUNABLE="false" Data_Path="start8@signal03"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8636" TITLE="output at end of stage 8" VALUE="0" TUNABLE="false" Data_Path="end8@signal03"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="1" Param_Id="8637" TITLE="duration of stage 8" VALUE="1000000" TUNABLE="false" Data_Path="t8@signal03"/>
+  <PARAMETER Submodel_Name="UD00" Submodel_Instance="1" Param_Id="8638" TITLE="number of stages" VALUE="3" TUNABLE="false" Data_Path="nstages@signal03"/>
+  <PARAMETER Submodel_Name="UD00" Submodel_Instance="1" Param_Id="8639" TITLE="cyclic" VALUE="1" TUNABLE="false" Data_Path="iscyclic@signal03"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="MECRSS0B" IS_DELTA="false" Submodel_Instance="1" Param_Id="8678" TITLE="offset to be subtracted from angular velocity" VALUE="0" TUNABLE="false" Data_Path="offset@rotaryspeedsensor2"/>
+  <PARAMETER UNITS="min/rev" Submodel_Name="MECRSS0B" IS_DELTA="false" Submodel_Instance="1" Param_Id="8679" TITLE="gain for signal output" VALUE="1" TUNABLE="false" Data_Path="gain@rotaryspeedsensor2"/>
+  <PARAMETER Submodel_Name="MECRSS0B" Submodel_Instance="1" Param_Id="8680" TITLE="sign convention: positive from" VALUE="2" TUNABLE="false" Data_Path="conv@rotaryspeedsensor2"/>
+  <PARAMETER UNITS="degree" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8857" TITLE="electrical angle" VALUE="0.00000000000000e+000" Data_Path="thetae@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8859" TITLE="stator current on d axis" VALUE="0.00000000000000e+000" Data_Path="Isd@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8862" TITLE="stator current on q axis" VALUE="0.00000000000000e+000" Data_Path="Isq@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="degC" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8837" TITLE="reference temperature" VALUE="25" TUNABLE="false" Data_Path="T0@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8838" TITLE="stator winding resistance at reference temperature" VALUE="Rs" TUNABLE="false" Data_Path="Rs0@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="1/K" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8839" TITLE="corrective coefficient on stator winding resistance" VALUE="0" TUNABLE="false" Data_Path="alphaRs@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8840" TITLE="stator cyclic inductance" VALUE="Ls" TUNABLE="false" Data_Path="Ls@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8841" TITLE="stator cyclic inductance on d axis" VALUE="Lsd" TUNABLE="false" Data_Path="Lsd@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8842" TITLE="stator cyclic inductance on q axis" VALUE="Lsq" TUNABLE="false" Data_Path="Lsq@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="Wb" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8843" TITLE="permanent magnet flux linkage at reference temperature" VALUE="Phif" TUNABLE="false" Data_Path="Psi0@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="1/K" Submodel_Name="EMDPMSM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8844" TITLE="corrective coefficient on flux linkage" VALUE="0" TUNABLE="false" Data_Path="alphaPsi@emd_SynchronousMachine"/>
+  <PARAMETER Submodel_Name="EMDPMSM01" Submodel_Instance="1" Param_Id="8845" TITLE="rotor type" VALUE="2" TUNABLE="false" Data_Path="rotorType@emd_SynchronousMachine"/>
+  <PARAMETER Submodel_Name="EMDPMSM01" Submodel_Instance="1" Param_Id="8846" TITLE="winding connection" VALUE="connectType" TUNABLE="false" Data_Path="connectType@emd_SynchronousMachine"/>
+  <PARAMETER Submodel_Name="EMDPMSM01" Submodel_Instance="1" Param_Id="8847" TITLE="number of pole pairs" VALUE="p" TUNABLE="false" Data_Path="p@emd_SynchronousMachine"/>
+  <PARAMETER UNITS="Arms" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8573" TITLE="maximum phase current RMS magnitude" VALUE="Imax" TUNABLE="false" Data_Path="ilim@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8574" TITLE="stator winding resistance at reference temperature" VALUE="Rs" TUNABLE="false" Data_Path="Rs0@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8575" TITLE="stator cyclic inductance" VALUE="Ls" TUNABLE="false" Data_Path="Ls@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8576" TITLE="stator cyclic inductance on d axis" VALUE="Lsd" TUNABLE="false" Data_Path="Lsd@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8577" TITLE="stator cyclic inductance on q axis" VALUE="Lsq" TUNABLE="false" Data_Path="Lsq@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="Wb" Submodel_Name="EMDPMSMTC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8578" TITLE="permanent magnet flux linkage at reference temperature" VALUE="Phif" TUNABLE="false" Data_Path="Psi0@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER Submodel_Name="EMDPMSMTC01" Submodel_Instance="1" Param_Id="8579" TITLE="rotor type" VALUE="2" TUNABLE="false" Data_Path="rotorType@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER Submodel_Name="EMDPMSMTC01" Submodel_Instance="1" Param_Id="8580" TITLE="number of pole pairs" VALUE="p" TUNABLE="false" Data_Path="p@emd_PMSM_TorqueToCurrentCommand"/>
+  <PARAMETER UNITS="V" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8803" TITLE="controller integral part for d axis" VALUE="0.00000000000000e+000" Data_Path="ipartd@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="V" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="8806" TITLE="controller integral part for q axis" VALUE="0.00000000000000e+000" Data_Path="ipartq@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8787" TITLE="stator winding resistance at reference temperature" VALUE="Rs" TUNABLE="false" Data_Path="Rs0@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8788" TITLE="stator cyclic inductance" VALUE="Ls" TUNABLE="false" Data_Path="Ls@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8789" TITLE="stator cyclic inductance on d axis" VALUE="Lsd" TUNABLE="false" Data_Path="Lsd@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8790" TITLE="stator cyclic inductance on q axis" VALUE="Lsq" TUNABLE="false" Data_Path="Lsq@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="Wb" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8791" TITLE="permanent magnet flux linkage at reference temperature" VALUE="Phif" TUNABLE="false" Data_Path="Psi0@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8792" TITLE="close loop time constant for d axis" VALUE="Taud" TUNABLE="false" Data_Path="Taud@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8793" TITLE="close loop time constant for q axis" VALUE="Tauq" TUNABLE="false" Data_Path="Tauq@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8794" TITLE="close loop natural frequency for d axis" VALUE="10" TUNABLE="false" Data_Path="wnd@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8795" TITLE="close loop damping ratio for d axis" VALUE="0.707" TUNABLE="false" Data_Path="ksid@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8796" TITLE="close loop natural frequency for q axis" VALUE="10" TUNABLE="false" Data_Path="wnq@emd_PMSM_CurrentControl"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDPMSMCC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8797" TITLE="close loop damping ratio for q axis" VALUE="0.707" TUNABLE="false" Data_Path="ksiq@emd_PMSM_CurrentControl"/>
+  <PARAMETER Submodel_Name="EMDPMSMCC01" Submodel_Instance="1" Param_Id="8798" TITLE="close loop transfer function type" VALUE="1" TUNABLE="false" Data_Path="TFtype@emd_PMSM_CurrentControl"/>
+  <PARAMETER Submodel_Name="EMDPMSMCC01" Submodel_Instance="1" Param_Id="8799" TITLE="rotor type" VALUE="2" TUNABLE="false" Data_Path="rotorType@emd_PMSM_CurrentControl"/>
+  <PARAMETER Submodel_Name="EMDPMSMCC01" Submodel_Instance="1" Param_Id="8800" TITLE="number of pole pairs" VALUE="p" TUNABLE="false" Data_Path="p@emd_PMSM_CurrentControl"/>
+  <PARAMETER Submodel_Name="EMDSDUSP01" Submodel_Instance="1" Param_Id="8650" TITLE="winding connection" VALUE="connectType" TUNABLE="false" Data_Path="connectType@emd_transformations_line_phase"/>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="3" LINKED_VARIABLE="k0GEN@constant_18" Param_Id="8827" TITLE="constant value" VALUE="0" TUNABLE="true" Data_Path="k@constant_18"/>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="4" LINKED_VARIABLE="k0GEN@constant_19" Param_Id="8834" TITLE="constant value" VALUE="0" TUNABLE="true" Data_Path="k@constant_19"/>
+  <PARAMETER Submodel_Name="UCONV0" Submodel_Instance="1" Param_Id="8890" TITLE="input unit" VALUE="rad" TUNABLE="false" Data_Path="tp1@unitconv"/>
+  <PARAMETER Submodel_Name="UCONV0" Submodel_Instance="1" Param_Id="8891" TITLE="output unit" VALUE="degree" TUNABLE="false" Data_Path="tp3@unitconv"/>
+  <PARAMETER Submodel_Name="EMDSDUP01" Submodel_Instance="1" Param_Id="8663" TITLE="winding connection" VALUE="connectType" TUNABLE="false" Data_Path="connectType@emd_transformations_line_phase_1"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8706" TITLE="switching frequency" VALUE="10000" TUNABLE="false" Data_Path="Fc@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8707" TITLE="transistor forward threshold voltage" VALUE="0.9" TUNABLE="false" Data_Path="Vtth@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8708" TITLE="transistor on-state resistance" VALUE="0.036" TUNABLE="false" Data_Path="Rton@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8709" TITLE="diode forward threshold voltage" VALUE="1" TUNABLE="false" Data_Path="Vdth@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8710" TITLE="diode forward resistance" VALUE="0.08" TUNABLE="false" Data_Path="Rdon@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="J" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8711" TITLE="switching energy per period per phase at reference voltage and current" VALUE="0.000515" TUNABLE="false" Data_Path="Eswref@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8712" TITLE="reference DC voltage" VALUE="400" TUNABLE="false" Data_Path="Uref@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="A" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8713" TITLE="reference current" VALUE="20" TUNABLE="false" Data_Path="Iref@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8714" TITLE="efficiency" VALUE="0.95" TUNABLE="false" Data_Path="constEff@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="W" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8715" TITLE="minimum power for efficiency calculation" VALUE="0.05" TUNABLE="false" Data_Path="minP@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="1" Param_Id="8716" TITLE="minimum input voltage" VALUE="1e-06" TUNABLE="false" Data_Path="Umin@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8717" TITLE="losses definition" VALUE="1" TUNABLE="false" Data_Path="lossCalcMethod@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8718" TITLE="space vector modulation" VALUE="1" TUNABLE="false" Data_Path="modMet@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8719" TITLE="interpolation type" VALUE="1" TUNABLE="false" Data_Path="intltype@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8720" TITLE="linear data out of range mode" VALUE="1" TUNABLE="false" Data_Path="lmode@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8721" TITLE="modulation discontinuity handling" VALUE="1" TUNABLE="false" Data_Path="disc@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8722" TITLE="discontinuity handling" VALUE="1" TUNABLE="false" Data_Path="discT@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8723" TITLE="cubic data out of range mode" VALUE="1" TUNABLE="false" Data_Path="cmode@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8724" TITLE="losses [W] datafile or expression as a function of RMS voltage [Vrms], RMS current [Arms], power factor [null], input DC voltage [V] and temperature [degC] ('Urms', 'Irms', 'pf', 'Uin' and 'Temp' in expression)" VALUE="$AME/libesc/data/inverterLosses.data" TUNABLE="false" Data_Path="userLoss@Average3PhaseInverter_1"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="1" Param_Id="8725" TITLE="maximum line-to-neutral voltage RMS magnitude to DC voltage ratio" VALUE="1/sqrt(8)" TUNABLE="false" Data_Path="UdcToUrms@Average3PhaseInverter_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDSDI01" IS_DELTA="false" Submodel_Instance="1" Param_Id="8904" TITLE="hiddenconnectType" VALUE="0" TUNABLE="false" Data_Path="connectTypeCustom@emd_transformations_line_phase_2"/>
+  <PARAMETER Submodel_Name="EMDSDI01" Submodel_Instance="1" Param_Id="8905" TITLE="winding connection" VALUE="connectType" TUNABLE="false" Data_Path="connectType@emd_transformations_line_phase_2"/>
+  <PARAMETER UNITS="V" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9095" TITLE="line-to-neutral voltage DC component command at port 5" VALUE="0.00000000000000e+000" Data_Path="dc@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="degree" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9062" TITLE="estimated rotor flux linkage angle" VALUE="0.00000000000000e+000" Data_Path="thetamrest@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="V" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9067" TITLE="controller integral part for d axis" VALUE="0.00000000000000e+000" Data_Path="ipartd@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="V" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9073" TITLE="controller integral part for q axis" VALUE="0.00000000000000e+000" Data_Path="ipartq@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9075" TITLE="estimated rotor magnetizing current" VALUE="0.00000000000000e+000" Data_Path="Imrest@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="Arms" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9039" TITLE="maximum stator phase current RMS magnitude" VALUE="100" TUNABLE="false" Data_Path="Irmsmax@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9040" TITLE="stator winding resistance at reference temperature" VALUE="1" TUNABLE="false" Data_Path="Rs0@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9041" TITLE="stator cyclic inductance" VALUE="0.25" TUNABLE="false" Data_Path="Ls@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9042" TITLE="rotor time constant at reference temperature" VALUE="0.153" TUNABLE="false" Data_Path="taur0@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9043" TITLE="dispersion coefficient" VALUE="0.066" TUNABLE="false" Data_Path="sigma@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9044" TITLE="time constant for rotor flux control" VALUE="0.1" TUNABLE="false" Data_Path="taur2@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="Vrms" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9045" TITLE="maximum line-to-neutral voltage RMS magnitude for current control" VALUE="1000000" TUNABLE="false" Data_Path="Ulimcc@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9046" TITLE="#stator current on d axis" VALUE="0" TUNABLE="false" Data_Path="Isdinit@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9047" TITLE="minimum rotor magnetizing current to estimate slip" VALUE="1e-06" TUNABLE="false" Data_Path="Isdmin@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9048" TITLE="close loop time constant for d axis" VALUE="0.1" TUNABLE="false" Data_Path="Taud@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9049" TITLE="close loop time constant for q axis" VALUE="0.1" TUNABLE="false" Data_Path="Tauq@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9050" TITLE="close loop natural frequency for d axis" VALUE="10" TUNABLE="false" Data_Path="wnd@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9051" TITLE="close loop damping ratio for d axis" VALUE="0.707" TUNABLE="false" Data_Path="ksid@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9052" TITLE="close loop natural frequency for q axis" VALUE="10" TUNABLE="false" Data_Path="wnq@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDSCIMFOC01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9053" TITLE="close loop damping ratio for q axis" VALUE="0.707" TUNABLE="false" Data_Path="ksiq@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9054" TITLE="magnetization strategy" VALUE="1" TUNABLE="false" Data_Path="strat@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9055" TITLE="use machine as generator only" VALUE="2" TUNABLE="false" Data_Path="genonly@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9056" TITLE="compensate rotor flux time constant" VALUE="1" TUNABLE="false" Data_Path="comptauR@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9057" TITLE="close loop transfer function type" VALUE="1" TUNABLE="false" Data_Path="TFtype@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9058" TITLE="winding connection" VALUE="1" TUNABLE="false" Data_Path="connectType@emd_SCIM_TorqueControl"/>
+  <PARAMETER Submodel_Name="EMDSCIMFOC01" Submodel_Instance="1" Param_Id="9059" TITLE="number of pole pairs" VALUE="1" TUNABLE="false" Data_Path="p@emd_SCIM_TorqueControl"/>
+  <PARAMETER UNITS="degree" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9399" TITLE="rotor electrical angle" VALUE="0.00000000000000e+000" Data_Path="thetaer@emd_InductionMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9401" TITLE="stator current on d axis" VALUE="0.00000000000000e+000" Data_Path="Isd@emd_InductionMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9403" TITLE="stator current on q axis" VALUE="0.00000000000000e+000" Data_Path="Isq@emd_InductionMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9404" TITLE="rotor modified current on d axis" VALUE="0.00000000000000e+000" Data_Path="Irdm@emd_InductionMachine"/>
+  <PARAMETER UNITS="A" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" IS_LINKED_VARIABLE="false" Param_Id="9405" TITLE="rotor modified current on q axis" VALUE="0.00000000000000e+000" Data_Path="Irqm@emd_InductionMachine"/>
+  <PARAMETER UNITS="degC" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9380" TITLE="reference temperature" VALUE="25" TUNABLE="false" Data_Path="T0@emd_InductionMachine"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9381" TITLE="stator winding resistance at reference temperature" VALUE="1" TUNABLE="false" Data_Path="Rs0@emd_InductionMachine"/>
+  <PARAMETER UNITS="1/K" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9382" TITLE="corrective coefficient on stator winding resistance" VALUE="0" TUNABLE="false" Data_Path="alphaRs@emd_InductionMachine"/>
+  <PARAMETER UNITS="H" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9383" TITLE="stator cyclic inductance" VALUE="0.25" TUNABLE="false" Data_Path="Ls@emd_InductionMachine"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9384" TITLE="rotor time constant at reference temperature" VALUE="0.153" TUNABLE="false" Data_Path="Tr0@emd_InductionMachine"/>
+  <PARAMETER UNITS="1/K" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9385" TITLE="corrective coefficient on rotor time constant" VALUE="0" TUNABLE="false" Data_Path="alphaTr@emd_InductionMachine"/>
+  <PARAMETER UNITS="null" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9386" TITLE="dispersion coefficient" VALUE="0.066" TUNABLE="false" Data_Path="sigma@emd_InductionMachine"/>
+  <PARAMETER UNITS="s" Submodel_Name="EMDSCIM01" IS_DELTA="false" Submodel_Instance="1" Param_Id="9387" TITLE="minimum admissible value for rotor time constant" VALUE="1e-06" TUNABLE="false" Data_Path="tauRmin@emd_InductionMachine"/>
+  <PARAMETER Submodel_Name="EMDSCIM01" Submodel_Instance="1" Param_Id="9388" TITLE="winding connection" VALUE="1" TUNABLE="false" Data_Path="connectType@emd_InductionMachine"/>
+  <PARAMETER Submodel_Name="EMDSCIM01" Submodel_Instance="1" Param_Id="9389" TITLE="number of pole pairs" VALUE="1" TUNABLE="false" Data_Path="p@emd_InductionMachine"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="3" IS_LINKED_VARIABLE="false" Param_Id="9108" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="3" Param_Id="9105" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="3" Param_Id="9106" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="3" Param_Id="9107" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="4" IS_LINKED_VARIABLE="false" Param_Id="9118" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer_1"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="4" Param_Id="9115" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="4" Param_Id="9116" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer_1"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="4" Param_Id="9117" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="5" IS_LINKED_VARIABLE="false" Param_Id="9128" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer_4"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="5" Param_Id="9125" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer_4"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="5" Param_Id="9126" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer_4"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="5" Param_Id="9127" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer_4"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="6" IS_LINKED_VARIABLE="false" Param_Id="9138" TITLE="output voltage" VALUE="0.00000000000000e+000" Data_Path="U@current_transducer_5"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="6" Param_Id="9135" TITLE="offset to be subtracted from current" VALUE="0" TUNABLE="false" Data_Path="offset@current_transducer_5"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBCT00" IS_DELTA="false" Submodel_Instance="6" Param_Id="9136" TITLE="gain for measured current" VALUE="1" TUNABLE="false" Data_Path="gain@current_transducer_5"/>
+  <PARAMETER Submodel_Name="EBCT00" Submodel_Instance="6" Param_Id="9137" TITLE="sign convention: positive from" VALUE="1" TUNABLE="false" Data_Path="conv@current_transducer_5"/>
+  <PARAMETER UNITS="Hz" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9145" TITLE="switching frequency" VALUE="10000" TUNABLE="false" Data_Path="Fc@Average3PhaseInverter"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9146" TITLE="transistor forward threshold voltage" VALUE="0.9" TUNABLE="false" Data_Path="Vtth@Average3PhaseInverter"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9147" TITLE="transistor on-state resistance" VALUE="0.036" TUNABLE="false" Data_Path="Rton@Average3PhaseInverter"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9148" TITLE="diode forward threshold voltage" VALUE="1" TUNABLE="false" Data_Path="Vdth@Average3PhaseInverter"/>
+  <PARAMETER UNITS="Ohm" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9149" TITLE="diode forward resistance" VALUE="0.08" TUNABLE="false" Data_Path="Rdon@Average3PhaseInverter"/>
+  <PARAMETER UNITS="J" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9150" TITLE="switching energy per period per phase at reference voltage and current" VALUE="0.000515" TUNABLE="false" Data_Path="Eswref@Average3PhaseInverter"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9151" TITLE="reference DC voltage" VALUE="400" TUNABLE="false" Data_Path="Uref@Average3PhaseInverter"/>
+  <PARAMETER UNITS="A" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9152" TITLE="reference current" VALUE="20" TUNABLE="false" Data_Path="Iref@Average3PhaseInverter"/>
+  <PARAMETER UNITS="null" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9153" TITLE="efficiency" VALUE="0.95" TUNABLE="false" Data_Path="constEff@Average3PhaseInverter"/>
+  <PARAMETER UNITS="W" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9154" TITLE="minimum power for efficiency calculation" VALUE="0.05" TUNABLE="false" Data_Path="minP@Average3PhaseInverter"/>
+  <PARAMETER UNITS="V" Submodel_Name="ESCAVINV001" IS_DELTA="false" Submodel_Instance="2" Param_Id="9155" TITLE="minimum input voltage" VALUE="1e-06" TUNABLE="false" Data_Path="Umin@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9156" TITLE="losses definition" VALUE="1" TUNABLE="false" Data_Path="lossCalcMethod@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9157" TITLE="space vector modulation" VALUE="1" TUNABLE="false" Data_Path="modMet@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9158" TITLE="interpolation type" VALUE="1" TUNABLE="false" Data_Path="intltype@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9159" TITLE="linear data out of range mode" VALUE="1" TUNABLE="false" Data_Path="lmode@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9160" TITLE="modulation discontinuity handling" VALUE="1" TUNABLE="false" Data_Path="disc@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9161" TITLE="discontinuity handling" VALUE="1" TUNABLE="false" Data_Path="discT@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9162" TITLE="cubic data out of range mode" VALUE="1" TUNABLE="false" Data_Path="cmode@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9163" TITLE="losses [W] datafile or expression as a function of RMS voltage [Vrms], RMS current [Arms], power factor [null], input DC voltage [V] and temperature [degC] ('Urms', 'Irms', 'pf', 'Uin' and 'Temp' in expression)" VALUE="$AME/libesc/data/inverterLosses.data" TUNABLE="false" Data_Path="userLoss@Average3PhaseInverter"/>
+  <PARAMETER Submodel_Name="ESCAVINV001" Submodel_Instance="2" Param_Id="9164" TITLE="maximum line-to-neutral voltage RMS magnitude to DC voltage ratio" VALUE="1/sqrt(8)" TUNABLE="false" Data_Path="UdcToUrms@Average3PhaseInverter"/>
+  <PARAMETER UNITS="degC" Submodel_Name="THTS1" IS_DELTA="false" Submodel_Instance="3" IS_LINKED_VARIABLE="false" Param_Id="9209" TITLE="temperature at port 1" VALUE="2.00000000000000e+001" Data_Path="t1@th_temperature_source_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="5" LINKED_VARIABLE="k0GEN@constant_1" Param_Id="9235" TITLE="constant value" VALUE="Udc" TUNABLE="true" Data_Path="k@constant_1"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="9249" TITLE="current at port 1" VALUE="0.00000000000000e+000" Data_Path="I1@voltmeter_1"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="9252" TITLE="current at port 3" VALUE="0.00000000000000e+000" Data_Path="I3@voltmeter_1"/>
+  <PARAMETER UNITS="A" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="9248" TITLE="output current" VALUE="0.00000000000000e+000" Data_Path="I@voltmeter_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="2" Param_Id="9244" TITLE="offset to be subtracted from voltage" VALUE="0" TUNABLE="false" Data_Path="offset@voltmeter_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="EBVT01" IS_DELTA="false" Submodel_Instance="2" Param_Id="9245" TITLE="gain for voltage measure" VALUE="1" TUNABLE="false" Data_Path="gain@voltmeter_1"/>
+  <PARAMETER Submodel_Name="EBVT01" Submodel_Instance="2" Param_Id="9246" TITLE="sign convention: positive pin" VALUE="1" TUNABLE="false" Data_Path="conv@voltmeter_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="GA00" IS_DELTA="false" Submodel_Instance="3" LINKED_VARIABLE="k0GEN@elect01_1" Param_Id="9254" TITLE="value of gain" VALUE="1/sqrt(8)" TUNABLE="true" Data_Path="k@elect01_1"/>
+  <PARAMETER UNITS="Nm/(rev/min)" Submodel_Name="RDAM00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9274" TITLE="damper rating" VALUE="mFvisc" TUNABLE="false" Data_Path="cdamp@rotarydamper_1"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="2" Param_Id="9275" TITLE="computation type" VALUE="1" TUNABLE="false" Data_Path="damprating@rotarydamper_1"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="2" Param_Id="9276" TITLE="discontinuity handling" VALUE="2" TUNABLE="false" Data_Path="disc@rotarydamper_1"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="2" Param_Id="9277" TITLE=" filename for data table R (Nm/(rev/min)) in terms of w (rev/min)" VALUE="vardamp.dat" TUNABLE="false" Data_Path="text1@rotarydamper_1"/>
+  <PARAMETER Submodel_Name="RDAM00" Submodel_Instance="2" Param_Id="9278" TITLE=" filename for data table T (Nm) in terms of w (rev/min)" VALUE="vartorq.dat" TUNABLE="false" Data_Path="text2@rotarydamper_1"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="3" IS_LINKED_VARIABLE="false" Param_Id="9287" TITLE="angular speed (always zero)" VALUE="0.00000000000000e+000" Data_Path="wzero@zeroomegasource_1"/>
+  <PARAMETER UNITS="degree" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="3" IS_LINKED_VARIABLE="false" Param_Id="9288" TITLE="fixed angle" VALUE="0.00000000000000e+000" Data_Path="theta@zeroomegasource_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9291" TITLE="time at which duty cycle starts" VALUE="0" TUNABLE="false" Data_Path="tstart@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9292" TITLE="output at start of stage 1" VALUE="1" TUNABLE="false" Data_Path="start1@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9293" TITLE="output at end of stage 1" VALUE="1" TUNABLE="false" Data_Path="end1@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9294" TITLE="duration of stage 1" VALUE="0.2" TUNABLE="false" Data_Path="t1@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9295" TITLE="output at start of stage 2" VALUE="1" TUNABLE="false" Data_Path="start2@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9296" TITLE="output at end of stage 2" VALUE="w" TUNABLE="false" Data_Path="end2@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9297" TITLE="duration of stage 2" VALUE="10" TUNABLE="false" Data_Path="t2@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9298" TITLE="output at start of stage 3" VALUE="w" TUNABLE="false" Data_Path="start3@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9299" TITLE="output at end of stage 3" VALUE="w" TUNABLE="false" Data_Path="end3@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9300" TITLE="duration of stage 3" VALUE="1000000" TUNABLE="false" Data_Path="t3@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9301" TITLE="output at start of stage 4" VALUE="31000" TUNABLE="false" Data_Path="start4@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9302" TITLE="output at end of stage 4" VALUE="31000" TUNABLE="false" Data_Path="end4@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9303" TITLE="duration of stage 4" VALUE="1000000" TUNABLE="false" Data_Path="t4@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9304" TITLE="output at start of stage 5" VALUE="0" TUNABLE="false" Data_Path="start5@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9305" TITLE="output at end of stage 5" VALUE="0" TUNABLE="false" Data_Path="end5@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9306" TITLE="duration of stage 5" VALUE="1000000" TUNABLE="false" Data_Path="t5@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9307" TITLE="output at start of stage 6" VALUE="0" TUNABLE="false" Data_Path="start6@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9308" TITLE="output at end of stage 6" VALUE="0" TUNABLE="false" Data_Path="end6@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9309" TITLE="duration of stage 6" VALUE="1000000" TUNABLE="false" Data_Path="t6@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9310" TITLE="output at start of stage 7" VALUE="0" TUNABLE="false" Data_Path="start7@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9311" TITLE="output at end of stage 7" VALUE="0" TUNABLE="false" Data_Path="end7@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9312" TITLE="duration of stage 7" VALUE="1000000" TUNABLE="false" Data_Path="t7@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9313" TITLE="output at start of stage 8" VALUE="0" TUNABLE="false" Data_Path="start8@signal03_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9314" TITLE="output at end of stage 8" VALUE="0" TUNABLE="false" Data_Path="end8@signal03_1"/>
+  <PARAMETER UNITS="s" Submodel_Name="UD00" IS_DELTA="false" Submodel_Instance="2" Param_Id="9315" TITLE="duration of stage 8" VALUE="1000000" TUNABLE="false" Data_Path="t8@signal03_1"/>
+  <PARAMETER Submodel_Name="UD00" Submodel_Instance="2" Param_Id="9316" TITLE="number of stages" VALUE="3" TUNABLE="false" Data_Path="nstages@signal03_1"/>
+  <PARAMETER Submodel_Name="UD00" Submodel_Instance="2" Param_Id="9317" TITLE="cyclic" VALUE="1" TUNABLE="false" Data_Path="iscyclic@signal03_1"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="MECRSS0B" IS_DELTA="false" Submodel_Instance="2" Param_Id="9319" TITLE="offset to be subtracted from angular velocity" VALUE="0" TUNABLE="false" Data_Path="offset@rotaryspeedsensor2_1"/>
+  <PARAMETER UNITS="min/rev" Submodel_Name="MECRSS0B" IS_DELTA="false" Submodel_Instance="2" Param_Id="9320" TITLE="gain for signal output" VALUE="1" TUNABLE="false" Data_Path="gain@rotaryspeedsensor2_1"/>
+  <PARAMETER Submodel_Name="MECRSS0B" Submodel_Instance="2" Param_Id="9321" TITLE="sign convention: positive from" VALUE="2" TUNABLE="false" Data_Path="conv@rotaryspeedsensor2_1"/>
+  <PARAMETER UNITS="V" Submodel_Name="EBZV01" IS_DELTA="false" Submodel_Instance="2" IS_LINKED_VARIABLE="false" Param_Id="9327" TITLE="zero volt voltage" VALUE="0.00000000000000e+000" Data_Path="V1@potential_reference_1"/>
+  <PARAMETER UNITS="null" Submodel_Name="CONS00" IS_DELTA="false" Submodel_Instance="6" LINKED_VARIABLE="k0GEN@constant_3" Param_Id="9328" TITLE="constant value" VALUE="15" TUNABLE="true" Data_Path="k@constant_3"/>
+  <PARAMETER UNITS="degC" Submodel_Name="THTS1" IS_DELTA="false" Submodel_Instance="4" IS_LINKED_VARIABLE="false" Param_Id="9331" TITLE="temperature at port 1" VALUE="2.00000000000000e+001" Data_Path="t1@th_temperature_source_3"/>
+  <PARAMETER UNITS="rev/min" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="4" IS_LINKED_VARIABLE="false" Param_Id="9332" TITLE="angular speed (always zero)" VALUE="0.00000000000000e+000" Data_Path="wzero@zeroomegasource_3"/>
+  <PARAMETER UNITS="degree" Submodel_Name="W000" IS_DELTA="false" Submodel_Instance="4" IS_LINKED_VARIABLE="false" Param_Id="9333" TITLE="fixed angle" VALUE="0.00000000000000e+000" Data_Path="theta@zeroomegasource_3"/>
+ </PARAMS_LIST>
+ <EXPOSED_COPY_LIST/>
+ <GLOBAL_PARAMS_LIST>
+  <PARAMETER Param_Id="0" TITLE="pole pairs" VALUE="2" TUNABLE="false" Data_Path="p"/>
+  <PARAMETER UNITS="Nm/(rad/s)" IS_DELTA="false" Param_Id="0" TITLE="viscous friction on motor shaft" VALUE="0.0002" TUNABLE="false" Data_Path="mFvisc"/>
+  <PARAMETER UNITS="Wb" IS_DELTA="false" Param_Id="0" TITLE="machine permanent magnet flux linkage" VALUE="0.07" TUNABLE="false" Data_Path="Phif"/>
+  <PARAMETER UNITS="Ohm" IS_DELTA="false" Param_Id="0" TITLE="machine stator resistance" VALUE="1e-06" TUNABLE="false" Data_Path="Rs"/>
+  <PARAMETER UNITS="H" IS_DELTA="false" Param_Id="0" TITLE="machine stator cyclic inductance" VALUE="0.00175" TUNABLE="false" Data_Path="Ls"/>
+  <PARAMETER UNITS="H" IS_DELTA="false" Param_Id="0" TITLE="machine stator cyclic inductance d" VALUE="Ls*0.9" TUNABLE="false" Data_Path="Lsd"/>
+  <PARAMETER UNITS="H" IS_DELTA="false" Param_Id="0" TITLE="machine stator cyclic inductance q" VALUE="Ls*1.1" TUNABLE="false" Data_Path="Lsq"/>
+  <PARAMETER UNITS="s" IS_DELTA="false" Param_Id="0" TITLE="d axis PI time constant" VALUE="0.01" TUNABLE="false" Data_Path="Taud"/>
+  <PARAMETER UNITS="s" IS_DELTA="false" Param_Id="0" TITLE="q axis PI time constant" VALUE="0.01" TUNABLE="false" Data_Path="Tauq"/>
+  <PARAMETER UNITS="A" IS_DELTA="false" Param_Id="0" TITLE="Maximum rms current" VALUE="50" TUNABLE="false" Data_Path="Imax"/>
+  <PARAMETER UNITS="rev/min" IS_DELTA="false" Param_Id="0" TITLE="angular velocity" VALUE="31000" TUNABLE="false" Data_Path="w"/>
+  <PARAMETER Param_Id="0" TITLE="winding connection" VALUE="2" TUNABLE="false" Data_Path="connectType"/>
+  <PARAMETER UNITS="V" IS_DELTA="false" Param_Id="0" TITLE="DC load voltage" VALUE="230.94*(sqrt(3)*(connectType==1)+(connectType==2))" TUNABLE="false" Data_Path="Udc"/>
+ </GLOBAL_PARAMS_LIST>
+ <GLOBAL_LOCAL_PARAMS_LIST/>
+</PL>

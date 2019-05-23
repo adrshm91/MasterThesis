@@ -1,0 +1,4 @@
+#ifndef __PIDtunerPositionControl_H__
+#define __PIDtunerPositionControl_H__
+#define STANDALONESIMULATOR
+#endif

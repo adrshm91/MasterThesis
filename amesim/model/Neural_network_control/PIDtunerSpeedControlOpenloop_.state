@@ -1,0 +1,4 @@
+EMDPMDC01 instance 1 armature winding input current [A] Data_Path=Ia@emd_DirectCurrentMachine
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports_3
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports_1
+RSD00 instance 1 relative angular displacement [degree] Data_Path=are@rotaryspringdamper_1

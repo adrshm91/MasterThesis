@@ -1,0 +1,61 @@
+1 EMDPMDC01 instance 1 duplicate of torque at port 1 [Nm] Param_Id=46 Data_Path=torqstat@emd_DirectCurrentMachine
+1 W000 instance 1 angular speed (always zero) [rev/min] Param_Id=15 Data_Path=wzero@zeroomegasource
+1 W000 instance 1 fixed angle [degree] Param_Id=16 Data_Path=theta@zeroomegasource
+1 EMDPMDC01 instance 1 heat flow rate at port 4 [W] Param_Id=44 Data_Path=dh@emd_DirectCurrentMachine
+1 THTS1 instance 1 temperature at port 1 [degC] Param_Id=17 Data_Path=t1@th_temperature_source
+1 HIDDEN Param_Id=42
+1 EBZV01 instance 1 zero volt voltage [V] Param_Id=18 Data_Path=V1@potential_reference
+1 RN001 instance 1 velocity at port 1 [rev/min] Param_Id=59 Data_Path=w1@reducer_1
+1 EMDPMDC01 instance 1 torque at port 1 [Nm] Param_Id=38 Data_Path=torqrot@emd_DirectCurrentMachine
+1 EBCT00 instance 1 duplicate of potential at port 1 [V] Param_Id=166 Data_Path=V3@current_transducer
+1 EMDPMDC01 instance 1 current at port 2 [A] Param_Id=40 Data_Path=I2@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 armature winding input voltage [V] Param_Id=25 Data_Path=Ua@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 armature winding input current [A] Param_Id=26 Data_Path=Ia@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 rotor relative speed [rev/min] Param_Id=27 Data_Path=wdif@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 electromagnetic torque [Nm] Param_Id=28 Data_Path=Tem@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 electromotive force [V] Param_Id=29 Data_Path=bemf@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 armature winding resistance [Ohm] Param_Id=30 Data_Path=Ra@emd_DirectCurrentMachine
+1 EMDPMDC01 instance 1 electromotive force and torque coefficient [V*s/rad] Param_Id=31 Data_Path=Kt@emd_DirectCurrentMachine
+0 HIDDEN Param_Id=33
+0 HIDDEN Param_Id=36
+1 EBZV01 instance 2 zero volt voltage [V] Param_Id=57 Data_Path=V1@potential_reference_1
+1 EBVS01 instance 1 duplicate of current at port 2 [A] Param_Id=52 Data_Path=I1@controlled_voltagesource_1
+1 EBCT00 instance 1 duplicate of current at port 3 [A] Param_Id=163 Data_Path=I1@current_transducer
+1 EBVS01 instance 1 potential at port 2 [V] Param_Id=54 Data_Path=V2@controlled_voltagesource_1
+1 CONS00 instance 1 output Param_Id=73 Data_Path=out@openLoopCmd
+1 EBVS01 instance 1 output voltage [V] Param_Id=50 Data_Path=U@controlled_voltagesource_1
+1 EBVS01 instance 1 output current [A] Param_Id=51 Data_Path=I@controlled_voltagesource_1
+1 MECRL0 instance 1 sign reversed duplicate of shaft speed at port 2 [rev/min] Param_Id=87 Data_Path=wdup@rotaryload2ports_1
+1 RN001 instance 1 torque at port 2 [Nm] Param_Id=61 Data_Path=t2@reducer_1
+1 MECRL0 instance 2 shaft speed at port 2 [rev/min] Param_Id=108 Data_Path=w@rotaryload2ports_3
+1 MECRSS0B instance 1 torque at port 1 [Nm] Param_Id=66 Data_Path=tordup@openLoopSpeed
+1 MECRSS0B instance 1 signal output Param_Id=68 Data_Path=wsig@openLoopSpeed
+1 MECTS0B instance 1 torque at port 1 [Nm] Param_Id=172 Data_Path=tordup@torquesensor2
+1 MECRSS0B instance 1 angular velocity at port 3 [rev/min] Param_Id=69 Data_Path=wdup@openLoopSpeed
+1 CONS00 instance 1 constant value - Linked variable Param_Id=72 Is_Linked_Variable=1 Data_Path=k0GEN@openLoopCmd
+1 RSD00 instance 1 torque at port 1 [Nm] Param_Id=123 Data_Path=to1@rotaryspringdamper_1
+1 MECRL0 instance 1 shaft speed at port 2 [rev/min] Param_Id=89 Data_Path=w@rotaryload2ports_1
+1 MECRL0 instance 1 rotary acceleration [rad/s/s] Param_Id=79 Data_Path=accel@rotaryload2ports_1
+1 MECRL0 instance 1 viscous friction torque [Nm] Param_Id=80 Data_Path=Tvisc@rotaryload2ports_1
+0 HIDDEN Param_Id=82
+0 HIDDEN Param_Id=85
+1 RSD00 instance 1 duplicate of torque at port 1 [Nm] Param_Id=125 Data_Path=t2@rotaryspringdamper_1
+1 MECRL0 instance 2 sign reversed duplicate of shaft speed at port 2 [rev/min] Param_Id=106 Data_Path=wdup@rotaryload2ports_3
+1 MECRL0 instance 2 rotary acceleration [rad/s/s] Param_Id=98 Data_Path=accel@rotaryload2ports_3
+1 MECRL0 instance 2 viscous friction torque [Nm] Param_Id=99 Data_Path=Tvisc@rotaryload2ports_3
+0 HIDDEN Param_Id=101
+0 HIDDEN Param_Id=104
+1 RSD00 instance 1 relative angular displacement [degree] Param_Id=114 Data_Path=are@rotaryspringdamper_1
+0 HIDDEN Param_Id=116
+0 HIDDEN Param_Id=119
+1 RSD00 instance 1 spring torque [Nm] Param_Id=121 Data_Path=tspring@rotaryspringdamper_1
+1 RSD00 instance 1 damper torque [Nm] Param_Id=122 Data_Path=tdamper@rotaryspringdamper_1
+1 UD00 instance 1 user defined duty cycle output Param_Id=157 Data_Path=output@piecewiselinear
+1 MECTS0B instance 1 angular velocity at port 3 [rev/min] Param_Id=175 Data_Path=wdup@torquesensor2
+1 TORQC instance 1 torque output [Nm] Param_Id=129 Data_Path=torque@torquecon
+1 EBCT00 instance 1 measured current [A] Param_Id=165 Data_Path=vsig@current_transducer
+1 EBCT00 instance 1 output voltage [V] Param_Id=161 Data_Path=U@current_transducer
+1 EBCT00 instance 1 output current [A] Param_Id=162 Data_Path=I@current_transducer
+1 DYNCOSIMSHM01 instance 1 output variable at port 1 Param_Id=180 Data_Path=p1__outputs@dynamic_cosim_shm_discrete
+1 MECTS0B instance 1 signal output Param_Id=174 Data_Path=torsig@torquesensor2
+1 DYNCOSIMSHM01 instance 1 output variable at port 2 Param_Id=181 Data_Path=p2__outputs@dynamic_cosim_shm_discrete

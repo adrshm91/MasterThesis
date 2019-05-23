@@ -1,0 +1,155 @@
+MECRSS0B instance 1 signal output Data_Path=wsig@closedLoopSpeed
+EBCT00 instance 2 measured current [A] Data_Path=vsig@current_transducer_1
+EBCT00 instance 3 measured current [A] Data_Path=vsig@current_transducer_4
+EBCT00 instance 1 measured current [A] Data_Path=vsig@current_transducer
+HIDDEN
+EMDSCIMFOC01 instance 1 stator line-to-neutral voltage angle command at port 6 [degree] Data_Path=theta@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 line-to-neutral voltage RMS magnitude command at port 7 [Vrms] Data_Path=X@emd_SCIM_TorqueControl
+GA00 instance 1 output from gain Data_Path=output@elect01_1
+UD00 instance 2 user defined duty cycle output Data_Path=output@piecewiselinear_2
+EMDSCIMFOC01 instance 1 rotor electrical speed [rev/min] Data_Path=wer@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor flux linkage speed [rev/min] Data_Path=wmrest2@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor flux linkage angle [degree] Data_Path=thetamrest@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator current command on d axis [A] Data_Path=Isdc@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator current measure on d axis [A] Data_Path=Isdm@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated stator electromotive force on d axis [V] Data_Path=Esdest@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller proportional part for d axis [V] Data_Path=ppartd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for d axis [V] Data_Path=ipartd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 voltage on d axis command [V] Data_Path=Usd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator current command on q axis [A] Data_Path=Isqc@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator current measure on q axis [A] Data_Path=Isqm@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated stator electromotive force on q axis [V] Data_Path=Esqest@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller proportional part for q axis [V] Data_Path=ppartq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for q axis [V] Data_Path=ipartq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 voltage on q axis command [V] Data_Path=Usq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor magnetizing current [A] Data_Path=Imrest@emd_SCIM_TorqueControl
+HIDDEN
+HIDDEN
+EMDSCIMFOC01 instance 1 maximum phase voltage RMS magnitude [Vrms] Data_Path=Urmsmax@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 maximum phase voltage RMS magnitude for current control [Vrms] Data_Path=Urmsmaxcc@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator phase current RMS magnitude for maximum torque [Arms] Data_Path=Irmsmaxtor@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 stator current on d axis for maximum torque [A] Data_Path=Isdmaxtor@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 maximum electromagnetic torque [Nm] Data_Path=Tmax@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 minimum electromagnetic torque [Nm] Data_Path=Tmin@emd_SCIM_TorqueControl
+HIDDEN
+HIDDEN
+HIDDEN
+HIDDEN
+ESCAVINV001 instance 1 potential at port 6 (I) [V] Data_Path=v1@Average3PhaseInverter
+EBCT00 instance 1 duplicate of current at port 3 [A] Data_Path=I1@current_transducer
+EMDSCIM11 instance 1 current at port 1 (I) [A] Data_Path=I1@emd_InductionMachine_1
+EBCT00 instance 1 duplicate of potential at port 1 [V] Data_Path=V3@current_transducer
+EBCT00 instance 1 output voltage [V] Data_Path=U@current_transducer
+EBCT00 instance 1 output current [A] Data_Path=I@current_transducer
+ESCAVINV001 instance 1 potential at port 4 (III) [V] Data_Path=v3@Average3PhaseInverter
+EBCT00 instance 2 duplicate of current at port 3 [A] Data_Path=I1@current_transducer_1
+EMDSCIM11 instance 1 current at port 3 (III) [A] Data_Path=I3@emd_InductionMachine_1
+EBCT00 instance 2 duplicate of potential at port 1 [V] Data_Path=V3@current_transducer_1
+EBCT00 instance 2 output voltage [V] Data_Path=U@current_transducer_1
+EBCT00 instance 2 output current [A] Data_Path=I@current_transducer_1
+ESCAVINV001 instance 1 potential at port 5 (II) [V] Data_Path=v2@Average3PhaseInverter
+EBCT00 instance 3 duplicate of current at port 3 [A] Data_Path=I1@current_transducer_4
+EMDSCIM11 instance 1 current at port 2 (II) [A] Data_Path=I2@emd_InductionMachine_1
+EBCT00 instance 3 duplicate of potential at port 1 [V] Data_Path=V3@current_transducer_4
+EBCT00 instance 3 output voltage [V] Data_Path=U@current_transducer_4
+EBCT00 instance 3 output current [A] Data_Path=I@current_transducer_4
+THTS1 instance 1 temperature at port 1 [degC] Data_Path=t1@th_temperature_source_1
+ESCAVINV001 instance 1 heat flow rate at port 7 [W] Data_Path=dh@Average3PhaseInverter
+EB3N03 instance 1 duplicate of potential at port 3 [V] Data_Path=V2@3_ports_electrical_node
+ESCAVINV001 instance 1 DC current at port 8 [A] Data_Path=idc1@Average3PhaseInverter
+EB4N04 instance 1 duplicate of potential at port 4 [V] Data_Path=V1@4_ports_electrical_node_1
+ESCAVINV001 instance 1 DC current at port 9 [A] Data_Path=idc2@Average3PhaseInverter
+ESCAVINV001 instance 1 input DC voltage [V] Data_Path=Uin@Average3PhaseInverter
+ESCAVINV001 instance 1 input DC current [A] Data_Path=Iin@Average3PhaseInverter
+ESCAVINV001 instance 1 line-to-neutral voltage RMS magnitude [Vrms] Data_Path=Urms@Average3PhaseInverter
+ESCAVINV001 instance 1 line current RMS magnitude [Arms] Data_Path=Irms@Average3PhaseInverter
+ESCAVINV001 instance 1 power factor Data_Path=pf@Average3PhaseInverter
+ESCAVINV001 instance 1 output active power [W] Data_Path=P@Average3PhaseInverter
+ESCAVINV001 instance 1 apparent power [VA] Data_Path=S@Average3PhaseInverter
+ESCAVINV001 instance 1 maximum line-to-neutral voltage RMS magnitude [Vrms] Data_Path=UrmsMax@Average3PhaseInverter
+ESCAVINV001 instance 1 line-to-neutral voltage I [V] Data_Path=XI@Average3PhaseInverter
+ESCAVINV001 instance 1 line-to-neutral voltage II [V] Data_Path=XII@Average3PhaseInverter
+ESCAVINV001 instance 1 line-to-neutral voltage III [V] Data_Path=XIII@Average3PhaseInverter
+ESCAVINV001 instance 1 transistor conduction losses [W] Data_Path=dhtc@Average3PhaseInverter
+ESCAVINV001 instance 1 diode conduction losses [W] Data_Path=dhdc@Average3PhaseInverter
+ESCAVINV001 instance 1 switching losses [W] Data_Path=dhsw@Average3PhaseInverter
+ESCAVINV001 instance 1 average line potential [V] Data_Path=Vn@Average3PhaseInverter
+HIDDEN
+HIDDEN
+HIDDEN
+ESCAVINV001 instance 1 calculated efficiency Data_Path=effCalcul@Average3PhaseInverter
+HIDDEN
+EB4N04 instance 1 duplicate of potential at port 4 [V] Data_Path=V3@4_ports_electrical_node_1
+EBVS01 instance 1 duplicate of current at port 2 [A] Data_Path=I1@controlled_voltagesource_1
+EB3N03 instance 1 current at port 3 [A] Data_Path=I3@3_ports_electrical_node
+EBVS01 instance 1 potential at port 2 [V] Data_Path=V2@controlled_voltagesource_1
+CONS00 instance 1 output Data_Path=out@constant_1
+EBVS01 instance 1 output voltage [V] Data_Path=U@controlled_voltagesource_1
+EBVS01 instance 1 output current [A] Data_Path=I@controlled_voltagesource_1
+CONS00 instance 1 constant value - Linked variable Is_Linked_Variable=1 Data_Path=k0GEN@constant_1
+EBVT01 instance 1 current at port 3 [A] Data_Path=I3@voltmeter_1
+EB3N03 instance 1 duplicate of potential at port 3 [V] Data_Path=V1@3_ports_electrical_node
+EB4N04 instance 1 duplicate of potential at port 4 [V] Data_Path=V2@4_ports_electrical_node_1
+EBVT01 instance 1 current at port 1 [A] Data_Path=I1@voltmeter_1
+EBVT01 instance 1 voltage measure [V] Data_Path=vsig@voltmeter_1
+EBVT01 instance 1 output voltage [V] Data_Path=U@voltmeter_1
+EBVT01 instance 1 output current [A] Data_Path=I@voltmeter_1
+GA00 instance 1 value of gain - Linked variable Is_Linked_Variable=1 Data_Path=k0GEN@elect01_1
+EBZV01 instance 1 zero volt voltage [V] Data_Path=V1@potential_reference_1
+EB4N04 instance 1 current at port 4 [A] Data_Path=I4@4_ports_electrical_node_1
+EMDSCIM11 instance 1 duplicate of torque at port 4 [Nm] Data_Path=torqstat@emd_InductionMachine_1
+W000 instance 1 angular speed (always zero) [rev/min] Data_Path=wzero@zeroomegasource_1
+W000 instance 1 fixed angle [degree] Data_Path=theta@zeroomegasource_1
+EMDSCIM11 instance 1 heat flow rate at port 5 [W] Data_Path=dh@emd_InductionMachine_1
+THTS1 instance 2 temperature at port 1 [degC] Data_Path=t1@th_temperature_source_4
+RN001 instance 1 velocity at port 1 [rev/min] Data_Path=w1@reducer
+EMDSCIM11 instance 1 torque at port 4 [Nm] Data_Path=torqrot@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding A voltage [V] Data_Path=UsA@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding A current [A] Data_Path=IsA@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding B voltage [V] Data_Path=UsB@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding B current [A] Data_Path=IsB@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding C voltage [V] Data_Path=UsC@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding C current [A] Data_Path=IsC@emd_InductionMachine_1
+EMDSCIM11 instance 1 neutral potential [V] Data_Path=Vneutral@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor relative speed [rev/min] Data_Path=wdif@emd_InductionMachine_1
+EMDSCIM11 instance 1 electromagnetic torque [Nm] Data_Path=Tem@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor electrical angle [degree] Data_Path=thetaer@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator voltage on d axis [V] Data_Path=Usd@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on d axis [A] Data_Path=Isd@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator voltage on q axis [V] Data_Path=Usq@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on q axis [A] Data_Path=Isq@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on d axis [A] Data_Path=Irdp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on q axis [A] Data_Path=Irqp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator winding resistance [Ohm] Data_Path=Rs@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 resistance [Ohm] Data_Path=Rrp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 magnetizing inductance [H] Data_Path=Lm@emd_InductionMachine_1
+EMDSCIM11 instance 1 magnetizing current [A] Data_Path=Im@emd_InductionMachine_1
+EMDSCIM11 instance 1 saturation coefficient Data_Path=Ks@emd_InductionMachine_1
+EMDSCIM11 instance 1 saturation coefficient derivative Data_Path=dKs@emd_InductionMachine_1
+HIDDEN
+HIDDEN
+EMDSCIM11 instance 1 determinant Data_Path=det@emd_InductionMachine_1
+MECRL0 instance 1 sign reversed duplicate of shaft speed at port 2 [rev/min] Data_Path=wdup@rotaryload2ports
+RN001 instance 1 torque at port 2 [Nm] Data_Path=t2@reducer
+RSD00 instance 1 torque at port 1 [Nm] Data_Path=to1@rotaryspringdamper
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports
+MECRL0 instance 1 rotary acceleration [rad/s/s] Data_Path=accel@rotaryload2ports
+MECRL0 instance 1 viscous friction torque [Nm] Data_Path=Tvisc@rotaryload2ports
+HIDDEN
+HIDDEN
+RSD00 instance 1 duplicate of torque at port 1 [Nm] Data_Path=t2@rotaryspringdamper
+MECRL0 instance 2 sign reversed duplicate of shaft speed at port 2 [rev/min] Data_Path=wdup@rotaryload2ports_2
+MECRSS0B instance 1 torque at port 1 [Nm] Data_Path=tordup@closedLoopSpeed
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports_2
+MECRL0 instance 2 rotary acceleration [rad/s/s] Data_Path=accel@rotaryload2ports_2
+MECRL0 instance 2 viscous friction torque [Nm] Data_Path=Tvisc@rotaryload2ports_2
+HIDDEN
+HIDDEN
+RSD00 instance 1 relative angular displacement [degree] Data_Path=are@rotaryspringdamper
+HIDDEN
+HIDDEN
+RSD00 instance 1 spring torque [Nm] Data_Path=tspring@rotaryspringdamper
+RSD00 instance 1 damper torque [Nm] Data_Path=tdamper@rotaryspringdamper
+UD00 instance 1 user defined duty cycle output Data_Path=output@piecewiselinear_1
+MECRSS0B instance 1 angular velocity at port 3 [rev/min] Data_Path=wdup@closedLoopSpeed
+TORQC instance 1 torque output [Nm] Data_Path=torque@torquecon_1

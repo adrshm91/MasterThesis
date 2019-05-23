@@ -1,0 +1,12 @@
+EMDSCIMFOC01 instance 1 estimated rotor flux linkage angle [degree] Data_Path=thetamrest@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for d axis [V] Data_Path=ipartd@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 controller integral part for q axis [V] Data_Path=ipartq@emd_SCIM_TorqueControl
+EMDSCIMFOC01 instance 1 estimated rotor magnetizing current [A] Data_Path=Imrest@emd_SCIM_TorqueControl
+EMDSCIM11 instance 1 rotor electrical angle [degree] Data_Path=thetaer@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on d axis [A] Data_Path=Isd@emd_InductionMachine_1
+EMDSCIM11 instance 1 stator current on q axis [A] Data_Path=Isq@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on d axis [A] Data_Path=Irdp1@emd_InductionMachine_1
+EMDSCIM11 instance 1 rotor cage 1 current on q axis [A] Data_Path=Irqp1@emd_InductionMachine_1
+MECRL0 instance 1 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports
+MECRL0 instance 2 shaft speed at port 2 [rev/min] Data_Path=w@rotaryload2ports_2
+RSD00 instance 1 relative angular displacement [degree] Data_Path=are@rotaryspringdamper

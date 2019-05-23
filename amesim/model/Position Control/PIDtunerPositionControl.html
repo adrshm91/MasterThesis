@@ -1,0 +1,119 @@
+<html>
+<head>
+  <script type="text/javascript" src="qthelp://lmsimagine.lab/ame_dir/doc/javascript/init_submodel.js"></script>
+  <title>Position Control Loop</title>  
+</head>
+<body bgcolor="white" link="blue" vlink="purple">
+
+<h1 align="center"><font size="6" color="#3757A7">Position control calibration with the PID tuner</font></h1>
+
+
+<h2><u>Purpose</u></h2>
+ <p>This demo illustrates how to make a position control loop by cascading 2 PID loops and calibrating them with 
+ the <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a>. It's a continuation of the 
+ <a href="qthelp://lmsimagine.lab/ame_dir/demo/Libraries/SIG/PIDtunerSpeedControl.html">speed control loop</a> demo.</p>
+
+ 
+<h2><u>Open this demo</u></h2>
+ <p><a href="qthelp://lmsimagine.lab/ame_dir/demo/Libraries/SIG/PIDtunerPositionControl.ame">$AME/demo/Libraries/SIG/PIDtunerPositionControl.ame</a></p> 
+
+
+<h2><u>Description</u></h2>
+ <p>Let's consider a 48 V, 400 W drive system as depicted in Figure 1. The system is made of a brushless DC motor which moves a reciprocating load through a 
+ reduction gear. The load is connected to the reducer shaft with a coupling device represented by its stiffness and damping. 
+ The load consists of an inertia and a resistive torque proportional to speed (e.g. viscous friction). External torque 
+ disturbance may also affect the load.</p>
+ <p>The objective is now to control the position of the load so that it follows a mission profile made of constant acceleration, constant speed 
+ and constant position sequences. The speed control loop which was previously 
+ designed with the PID tuner is kept and an outer position loop will be defined here, using an additional position sensor.</p> 
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/startingModel.png"></p> 
+ <p align="center"><b>Figure 1: Plant model with speed control loop and mission profile</b></p>
+ <br>
+ 
+   
+ <h3>Prepare for control synthesis</h3>
+ <p>Let's close the position loop using the PID controller <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/submodels/SIGPIDT0.html">SIGPIDT0</a>. 
+ According to the <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a> guidelines,</p>
+ <ul>
+   <li>The position target is connected to port 3, the position sensor signal to port 1.</li> 
+   <li>The output of the PID is connected to speed control PID setpoint (e.g. it's giving a speed target).</li>
+   <li><i>control setpoint at port 3</i> is declared as <i>control</i> and <i>plant value at port 1</i> as <i>observer</i></li>
+   <li>Linearization dates are added to compute linearization at different operating speeds.</li>
+   <li>The default proportional gain is scaled for this system with a starting value given by <i>kP = nominal PID output / max position = 
+   300 rpm / 90 deg = 3.33.</i></li>
+ </ul>
+  
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/closedLoopModel.png"></p> 
+ <p align="center"><b>Figure 2: Closed-loop model</b></p>
+ <br>
+  
+ <p>Next, the <i>linearization behavior</i> status of the inner loop PID must be switched to <i>normal</i> so that the outer loop 
+ PID sees correctly the inner loop during linearization.</p>
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/LAsetup.png"></p> 
+ <p align="center"><b>Figure 3: Switch inner loop PID linearization behavior to normal</b></p>
+ <br>
+ 
+ <p>The system can be simulated to check that the load is moving in a stable fashion. One can observe that position tracking is already decent 
+ with the proportional control, even though a bit slow.</p>
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/initialResults.png"></p> 
+ <p align="center"><b>Figure 4: Initial results with pre-scaling of Kp</b></p>
+ <br>
+  
+ 
+ <h3>Control synthesis, step 1</h3>
+ <p>Let's open the <a href="qthelp://lmsimagine.lab/ame_dir/libsig/doc/html/utils/pidTuner.html">PID tuner</a> by clicking on its icon, 
+ either from the <i>Variables</i> or from the <i>Parameters</i> view. The tool loads linear analysis data and displays the Bode diagram and the 
+ step response as depicted on the left hand side of Figure 5. Let's first adjust ranges to focus on the interesting part of those curves (e.g. 
+ dominant modes centered in the frequency range, full transient for step response). For this, go into the <i>Options</i> menu and change 
+ the frequency range to 1-1000 Hz and the time scale to 0.1 s.</p>
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/changeOptions.png"></p> 
+ <p align="center"><b>Figure 5: PID tuning tool, adjusting frequency and time scales</b></p>
+ <br>
+ 
+ <p>The plant is now correctly loaded. The system behaves as an integrator at low frequencies. That's why the proportional gain is 
+ already providing a zero static error. By changing the linearization time from the corresponding combo box, it can be confirmed that this 
+ model is time invariant since the Bode curve doesn't change with linearization point. Therefore, we don't have to think about which one to 
+ select for gain synthesis and we can move to the next step.</p> 
+ <br>
+ 
+ <h3>Control synthesis, step 2</h3>
+ <p>A simplified model has to be fitted on top of this linearization with the <i>Plant estimate widget</i>. Although this can be done manually by 
+ selecting a model type in the list and tuning its parameters until a good match is found, let's try the <b>auto-fitting</b> feature by hitting the 
+ <i>Find best estimate</i> button. The tool quickly converges to an integrator with first order lag as shown in Figure 6. One can recognize the 
+ natural frequency of the speed loop that was previously tuned at 8.0 Hz. Model fit is completed, so we can move to the PID tuning by hitting 
+ the <i>Next</i> button.</p>
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/modelFit.png"></p> 
+ <p align="center"><b>Figure 6: Fitting a model</b></p>
+ <br>
+ 
+ <h3>Control synthesis, step 3</h3>
+ <p>By selecting a slower or a faster response with the slider bar, the tool automatically computes the PID gains. Therefore, calibration is about 
+ choosing the desired dynamic, while taking care of stability margins to deal with potential perturbations or plant variations. The tuning setup 
+ can be applied to the submodel with the <i>Apply</i> button. After updating the simulation, results can be confirmed using the plot 
+ configuration <i>control</i>. In the example below, the position loop is tuned at 5 Hz to get reasonable gain and phase margins.</p> 
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/softTuning.png"></p> 
+ <p align="center"><b>Figure 7: Closed-loop response with robust tuning</b></p>
+ <br>
+ <p>For sake of demonstration, let's push the tuning until stability limits are just passed. This happens nearby 24.5 Hz. Around this frequency, both phase 
+ and gain margins are roughly zero due to the high frequency resonance of the system. 
+ After applying gains and updating the simulation, one can confirm that the system starts running stable and fast with however noisy commands. Along with time and 
+ excitation from perturbations, the magnitude of oscillations at PID output is increasing. This unstable behavior gets worse and worse and is 
+ eventually making the system diverge. Let's note that this instability is caused by the high frequency mode of the system around 250 Hz which mostly comes from
+ the DC motor dynamics. This can be visualized with the <i>Stability plot</i> available under the <i>More plots</i> menu.</p>
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/stabilityLimit.png"></p> 
+ <p align="center"><b>Figure 8: Closed-loop unstable response</b></p>
+ 
+ <p align="center"><img src="./PIDtunerPositionControl_fichiers/stabilityMargins.png"></p> 
+ <p align="center"><b>Figure 9: Stability margins</b></p>
+ 
+ 
+ <p>This example highlights the necessity of checking stability margins with the PID tuner when calibrating the dynamic response.</p>
+ <br>
+ <p>As a conclusion, we've seen in this demo how PID controllers can be cascaded to isolate dynamics and how they can be easily calibrated 
+ thanks to the PID tuner.</p>
+ <br>  
+ 
+<hr style="border-width:0;">
+<div id="AMECopyright"></div>
+</body>
+</html>

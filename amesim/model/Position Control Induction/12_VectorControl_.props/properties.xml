@@ -1,0 +1,99 @@
+<properties xmlns="amesim-property-instances" version="1">
+ <property target="model:" id="id0" name="@special:model_history" sticker="">
+  <struct/>
+ </property>
+ <property target="model:" id="id4" name="@special:prepost_tools_document_scripts" sticker="">
+  <struct/>
+ </property>
+ <property target="aliaspath:piecewiselinear_1" id="id5" name="@special:prepost_tools_element_apps">
+  <struct>
+   <attribute name="handle_78b8">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">piecewise linear designer</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libsig/utils/SIGPiecewiseLinearDesigner_app/SIGPiecewiseLinearDesigner.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_z10192</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">51d107d712e6848c773832d20737cbe40cc7be32</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">4</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property target="aliaspath:piecewiselinear_2" id="id6" name="@special:prepost_tools_element_apps">
+  <struct>
+   <attribute name="handle_1aa8">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">piecewise linear designer</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libsig/utils/SIGPiecewiseLinearDesigner_app/SIGPiecewiseLinearDesigner.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_85583</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">51d107d712e6848c773832d20737cbe40cc7be32</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">4</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property target="model:" id="id1" name="@special:prepost_tools_document_plots">
+  <struct/>
+ </property>
+ <property target="model:" id="id2" name="@special:prepost_tools_document_animations">
+  <struct/>
+ </property>
+ <property target="model:" id="id3" name="@special:prepost_tools_document_dashboards">
+  <struct/>
+ </property>
+</properties>

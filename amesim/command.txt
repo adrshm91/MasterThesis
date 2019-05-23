@@ -1,0 +1,6 @@
+gcc -IC:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\amesim\include -IC:\Users\z003zxuz\AppData\Local\Continuum\anaconda3\envs\deeplearning\include -DMS_WIN64 binding_amecommunication.c -LC:\Users\z003zxuz\AppData\Local\Continuum\anaconda3\envs\deeplearning\libs -LC:\Users\z003zxuz\Documents\Thesis_Code\MasterThesis\amesim\libs -lgeneric_cosim -lws2_32 -lpython36 -shared -o binding_amecommunication.dll && copy binding_amecommunication.dll binding_amecommunication.pyd
+
+
+import binding_amecommunication
+ret = binding_amecommunication.shminit(0, 'shm_0', 3, 3)
+binding_amecommunication.shmexchange(ret[1], [0.0, 0.0, 0.0])
