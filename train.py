@@ -18,7 +18,7 @@ net = nn.Network(latent_size=4, input_size=1, encoder_num_units=[100, 100], deco
 
 training_data, validation_data = edm.load_speed_torque_current(20, 'motor_speed_torque_50')
 
-net.train(epoch_num=2000, batch_size=1000, learning_rate=1e-4, training_data=training_data, validation_data=validation_data,
+net.train(epoch_num=2000, batch_size=100, learning_rate=1e-4, training_data=training_data, validation_data=validation_data,
           test_step=10)
 
 net.save('motor_speed_torque_50')
