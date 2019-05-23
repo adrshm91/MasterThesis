@@ -22,7 +22,6 @@ class Io_nn(object):
         self.log_dir_val = self.model_dir_logs + "/logs_val/"
         if not os.path.exists(self.model_dir_logs):
             os.makedirs(self.model_dir_logs)
-            os.makedirs(self.checkpoints_dir)
             os.makedirs(self.log_dir_val)
             os.makedirs(self.log_dir_train)
         if not os.path.exists(self.model_dir_checkpoints):

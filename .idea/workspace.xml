@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f373e6a-2f83-4dce-b258-d73e0c261de1" name="Default Changelist" comment="" />
+    <list default="true" id="8f373e6a-2f83-4dce-b258-d73e0c261de1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/scinet_motor/io_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/scinet_motor/io_nn.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scinet_motor/model_new.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
+            <state relative-caret-position="506">
+              <caret line="224" column="34" lean-forward="true" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -91,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scinet_motor/io_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="506">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -127,6 +129,7 @@
       <find>state</find>
       <find>decoder_l2_loss</find>
       <find>log_dir</find>
+      <find>check</find>
     </findStrings>
     <replaceStrings>
       <replace>None</replace>
@@ -153,14 +156,14 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/amesim/Amesim_tensorflow.py" />
         <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/scinet_motor/io_nn.py" />
         <option value="$PROJECT_DIR$/scinet_motor/model_new.py" />
+        <option value="$PROJECT_DIR$/scinet_motor/io_nn.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2043" />
-    <option name="y" value="148" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="2699" />
+    <option name="y" value="-374" />
     <option name="width" value="1550" />
     <option name="height" value="942" />
   </component>
@@ -409,7 +412,7 @@
       <workItem from="1557837110986" duration="5939000" />
       <workItem from="1557854796991" duration="10644000" />
       <workItem from="1558269640394" duration="599000" />
-      <workItem from="1558598273689" duration="3994000" />
+      <workItem from="1558598273689" duration="4765000" />
     </task>
     <servers />
   </component>
@@ -422,13 +425,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231177000" />
+    <option name="totallyTimeSpent" value="231948000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-643" width="2576" height="1416" extended-state="6" />
+    <frame x="2699" y="-374" width="1550" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26232114" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.44295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -868,10 +871,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scinet_motor/io_nn.py">
+    <entry file="file://$PROJECT_DIR$/scinet_motor/model_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="506">
+          <caret line="224" column="34" lean-forward="true" selection-start-line="224" selection-start-column="34" selection-end-line="224" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,13 +891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scinet_motor/model_new.py">
+    <entry file="file://$PROJECT_DIR$/scinet_motor/io_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="104" column="25" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
